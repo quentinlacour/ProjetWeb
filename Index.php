@@ -28,7 +28,6 @@ $request = Request::getCurrentRequest();
 try {
 // Instantiate the adequat controller according to the current request
     $controller = Dispatcher::dispatch($request);
-	die();
 // Execute the requested action
     $controller->execute();
 } catch (Exception $e) {

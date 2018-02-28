@@ -1,6 +1,6 @@
 <?php
 
-abstract class Controller extends MyObjects {
+abstract class Controller extends MyObject {
 
 
     public function __construct($myRequest) {
