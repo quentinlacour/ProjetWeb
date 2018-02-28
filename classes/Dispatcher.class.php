@@ -4,7 +4,7 @@ class Dispatcher extends MyObject {
 
     public static function dispatch($myRequest){       
 
-        $nomController = new Controller;
+        $nomController = Request::getControllerName();
         ucfirst($nomController)->__construct($myRequest);
 
         return $controller;
