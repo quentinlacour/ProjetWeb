@@ -31,7 +31,7 @@ class Request extends MyObject {
         else {
             $controllerName = ($_GET["controller"]); 
         }
-        echo ($controllerName);
+        //echo ($controllerName);
         return ($controllerName);  
     }
     
@@ -46,7 +46,7 @@ class Request extends MyObject {
         else {
             $actionName = ($_GET["action"]); 
         }
-        echo ($actionName);
+        //echo ($actionName);
         return ($actionName);     
     }  
  }

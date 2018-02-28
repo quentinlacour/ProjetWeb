@@ -22,18 +22,13 @@ require_once(__ROOT_DIR . '/classes/AutoLoader.class.php');
 // Reify the current request
 $request = Request::getCurrentRequest();
 
-$actionNom= Request::getActionName();
-$controllerNom= Request::getControllerName();
-
-die();
-
-
+// $actionNom= Request::getActionName();
+// $controllerNom= Request::getControllerName();
 
 try {
-
 // Instantiate the adequat controller according to the current request
     $controller = Dispatcher::dispatch($request);
-
+	die();
 // Execute the requested action
     $controller->execute();
 } catch (Exception $e) {

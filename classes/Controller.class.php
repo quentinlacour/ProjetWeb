@@ -1,14 +1,19 @@
 <?php
 
-class Controller extends MyObjects {
+abstract class Controller extends MyObjects {
 
-    $controller;
 
     public function __construct($myRequest) {
-        $controller = Controller new;
+        $controller = new Controller;
     }
-
-//TEST Github Q
+	
+	abstract public function defaultAction($myRequest);
+	
+	public static function execute($myRequest){
+		$monControlleur = Dispatcher::dispatch($myRequest);
+		
+	
+	}
 
 
 }
