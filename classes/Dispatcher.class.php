@@ -6,7 +6,7 @@
 
 class Dispatcher extends MyObject {
 	
-	public static function dispatch($request) {
+    public static function dispatch($request) {
 		return static::dispatchToController($request->getControllerName(),$request);
 	}
    
