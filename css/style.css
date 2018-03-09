@@ -1,0 +1,204 @@
+
+/* general defaults */
+
+body {
+	font-size: 16px;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.table-borderless tr > *  {
+	border: none !important;
+}
+
+
+.metaInfos {
+	font-size:70%;
+	color: grey;
+}
+
+.content {
+	margin-left:20px;
+}
+
+
+#errorLogin {
+	color: red;
+	position: absolute;
+	top: 50px;
+	right: 130px;
+}
+
+/* Thin out the marketing headings */
+
+.featurette-heading {
+  font-size: 300%;
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #5a5a5a;
+}
+
+.featurette-heading .text-muted {
+	font-size: 80%;
+}
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-image, .featurette-image-steam {
+	transform: rotate(-2deg);
+}
+
+/* footer bar */
+
+.navbar-small {
+	background-image: linear-gradient(to bottom, #f7f7f7 0, #fff 100%);
+	background-repeat: repeat-x;
+	border-color: #e7e7e7;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 1px 5px rgba(0,0,0,0.075);
+	min-height: 32px;
+	font-size: 80%;
+}
+
+.navbar-small .container-fluid {
+	padding-top: 5px;
+}
+
+.navbar-small .navbar-header {
+	padding-top: 2px;
+}
+
+.navbar-small a, .navbar-small .navbar-text {
+	margin:0; 
+	margin: 0; 
+}
+
+.navbar-fixed-bottom .navbar-nav {
+	padding-right:10px;
+}
+	 
+/* debug div */
+	 	 
+.debug {
+    position: fixed;
+    bottom: 34px;
+	 right: 5px;
+ 	 padding: 3px 3px;
+}
+
+.debug > * {
+	 display: block;
+	 border: none;
+	 font-size: 70% !important;	 
+	 margin-bottom: 2px;
+	 padding: 5px 13px;
+}
+
+/* Forms */
+
+.form-group.requiredField .control-label:after { 
+   content:"*";
+   color:red;
+}
+
+.feedback, .feedback-error, .feedback-success {
+	display:none;
+}
+
+.has-error .feedback, .has-success .feedback, .has-warning .feedback {
+	display: block  !important;
+}
+
+.has-error .feedback-error {
+	display: block !important;
+}
+
+.has-success .feedback-success {
+	display: block !important;
+}
+
+
+/* Board Game */
+
+/*
+@media(max-width:767px){}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
+*/	
+
+#buttonZooms {
+	margin-bottom: 10px;
+}
+
+@media(min-width:992px){
+	#svg_board {
+		width:847px;
+		height:530px;
+	}
+}
+
+@media(min-width:1200px){
+	#svg_board {
+		width:960px;
+		height:600px;
+	}	
+}
+	
+/* Game Board */
+#svg_board {
+	outline: 1px solid #666666;
+}
+
+.town {
+	fill: transparent;
+	cursor: pointer;
+}
+
+.town:hover {
+	fill: red;
+}
+
+.town_selected, .town_selected:hover {
+	fill: red;
+}
+
+.town_path {
+	cursor: pointer;
+	fill:none;
+	stroke-width: 10px;
+	stroke: transparent;
+	stroke-linecap: round;
+}
+
+.town_path:hover {
+	stroke: transparent;
+}
+
+.path_selected, .path_selected:hover {
+	stroke: red !important;
+}
+
+.path_pink { stroke:pink; }
+.path_yellow { stroke:yellow; }
+.path_green { stroke:green; }
+.path_brown { stroke:brown; }
+.path_transparent { stroke:grey; }
+.path_white { stroke:white; }
+.path_blue { stroke:blue; }
+.path_orange { stroke:orange; }
+.path_black { stroke:black; }
+
+/* destination card */
+
+.destinationCard {
+	width: 250px;
+}
+
+body .row:last-child {
+	margin-bottom: 50px;
+}

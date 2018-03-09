@@ -16,6 +16,10 @@ abstract class Controller extends MyObject {
 		$this -> $nomAction($this->request);
 		
 	}
+	
+	public function getActionName(){
+		return $this->request->getActionName();
+	}
 
 
 
