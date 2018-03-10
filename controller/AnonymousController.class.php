@@ -2,12 +2,6 @@
 
 class AnonymousController extends Controller {
 	
-	// public function __construct($request){
-		// if($_POST(["c"])==$request-> && $_POST(["a"])==$request-> ){
-			// $request->validateInscription($request);
-		// }
-	// }
-	
 	
 	public function defaultAction($request) {
 		$view = new View($this, 'index');
