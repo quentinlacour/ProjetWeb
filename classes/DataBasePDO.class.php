@@ -2,19 +2,24 @@
 
 class DataBasePDO extends MyObject {
 	
-   private static $_BDD = null;
+	private $PDOInstance = null;
+	private static $_BDD = null;
  
-   private function __construct($adresseServeur, $login, $motDePasse){
-	   $_BDD = new PDO($adresseServeur, $login, $motDePasse);
+   private function __construct(){
+		$this->PDOInstance = new PDO('mysql:dbname='._MYSQL_DBNAME.';host='._MYSQL_HOST,_MYSQL_USER,_MYSQL_PASSWORD);
    }
    
    public static function getInstance() {
  
-     if(is_null(self::$_instance)) {
-       self::$_instance = new Singleton();  
+     if(is_null(static::$_BDD)) {
+		 static::$_BDD = new DataBasePDO();  
      }
  
-     return self::$_instance;
+     return static::$_BDD;
+   }
+   
+   public function getPDOInstance(){
+	   return $this->PDOInstance;
    }
 
    

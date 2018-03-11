@@ -1,21 +1,23 @@
 <?php
 
 class Model extends MyObject {
+	
 	private static $BDD;
 	
-	protected function executeRequest($requeteSQL,  $parameters = null){
+	protected static function executeRequest($requeteSQL,  $parameters = null){
 		if ($parameters == null){
-			$resultat = self::getBDD()->getInstance()->query($requeteSQL);
+			$resultat = self::getBDD()-> getPDOInstance() -> query($requeteSQL);
 		}
 		else{
-			$resultat = self::getBDD()->getInstance()->prepare($requeteSQL, $parameters);
+			$resultat = self::getBDD()-> getPDOInstance() -> prepare($requeteSQL);
+			$resultat->execute($parameters);
 		}
 		return $resultat;
 	}
 	
-	protected function getBDD(){
-		if($BDD == null){
-			$BDD = DataBasePDO::getInstance(); 
+	protected static function getBDD(){
+		if(self::$BDD == null){
+			self::$BDD = DataBasePDO::getInstance(); 
 		}
 		return Model::$BDD;
 	}
