@@ -22,10 +22,11 @@ class AnonymousController extends Controller {
 		} 
 		else {
 			$password = $request->read('inscPassword');
-			$nom = $request->read('nom');
-			$prenom = $request->read('prenom');
-			$mail = $request->read('mail');
-			$user = User::create($login, $password,$mail,$nom,$prenom);
+			$nom = $request->read('inputLastname');
+			$prenom = $request->read('inputFirstname');
+			$email = $request->read('inputEmail');
+			$telephone = $request->read('inputTelephone');
+			$user = User::create($login, $prenom, $nom, 0, $telephone, $email, $password);
 			if(!isset($user)) {
 				$view = new View($this,'inscription');
 				$view->setArg('inscErrorText', 'Cannot complete inscription');
@@ -39,6 +40,32 @@ class AnonymousController extends Controller {
 			}
 		}
    
+	}
+	
+	public function validateConnection($request) {
+		$login = $request->read('login');
+		$password = $request->read('password');
+		if(!User::isLoginUsed($login)) {
+			$view = new View($this,'index');
+			$view->setArg('inscErrorText',"Ce login n'existe pas");
+			$view->render();
+		} 
+		else {
+			$user = User::connexion($login, $password);
+			$tmp = $user->fetch();
+			// print_r($tmp);
+			if($password == $tmp['password']){
+				echo 'Vous êtes connecté';
+				$view = new View($this,'index');
+				$view->render();
+			}
+			else {
+				echo 'MDP PAS BON';
+				$view = new View($this,'index');
+				$view->setArg('inscErrorText', 'Le couple mot de passe/Login ne correspond pas');
+				$view->render();
+			}
+		}
 	}
 }
 

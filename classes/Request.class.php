@@ -37,6 +37,21 @@ class Request extends MyObject {
       echo "\n";
    } 
    
+   public function read($params){
+	   if(isset($_GET[$params])){
+		   return $_GET[$params];
+	   }
+	   if(isset($_POST[$params])){
+		   return $_POST[$params];
+	   }
+	   throw new Exception ("The parameter ".$params." isn't defined in the request \n", $this->debug());
+   }
+   
+   public function write($params, $value){
+	   $_GET[$params] = $value;
+	   exit();
+   }
+   
 }
 
 ?>

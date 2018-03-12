@@ -30,7 +30,7 @@
 <div class="row">
 
 
-    <form class="form-horizontal col-sm-12" action="index.php" method="post">
+    <form class="form-horizontal col-sm-12" action="index.php?a=validateInscription" method="post">
 		  <!-- ---------------- 
 		  		 inputLogin 
   		  ---------------- -->	
@@ -122,6 +122,24 @@
   				 </div>
   			 <?php endif ?>
         </div>
+		
+		<!-- ---------------- 
+		  		 Telephone 
+  		 ---------------- -->		  		  		  
+        <div class="form-group requiredField <?php if(isset($inputTelephoneError) && $inputTelephoneError) echo 'has-error'; if(isset($inputTelephoneFeedbackMsg)) echo ' has-feedback' ?>">
+            <label class="control-label col-sm-3" for="inputTelephone">Téléphone</label>
+				<div class="col-sm-3">
+                <input type="text" class="form-control" id="inputTelephone" placeholder="Téléphone" name="inputTelephone">
+  				 <?php	if(isset($inputTelephoneError) && $inputTelephoneError): ?>
+  					 <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  				 <?php endif ?>
+            </div>
+  			 <?php if(isset($inputTelephoneFeedbackMsg)): ?>
+  	       	 <div id="inputSuccess3Status" class="col-sm-4 help-block feedback" aria-hidden="true">
+  			 		<span class="feedback-error"><?php echo $inputTelephoneFeedbackMsg; ?></span>
+  				 </div>
+  			 <?php endif ?>
+        </div>
 		  		  
 		 <!-- ---------------- 
 		 		 inputEmail 
@@ -160,7 +178,7 @@
         <br>
         <div class="form-group">
             <div class="col-sm-offset-3 col-sm-3">
-                <input type="submit" class="btn btn-primary" value="Créer mon compte">
+                <input type="submit" class="btn btn-primary" value="Créer mon compte" name="boutonCreerCompte">
                 <input type="reset" class="btn btn-default" value="Annuler">
             </div>
         </div>

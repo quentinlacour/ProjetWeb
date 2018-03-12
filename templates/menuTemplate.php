@@ -11,7 +11,7 @@
 	   ?>><a href="index.php?c=anonymous&amp;a=inscription">Inscription</a></li>
 </ul>
 
-<form class="navbar-form navbar-right" id="login_form" action="index.php" method="post">
+<form class="navbar-form navbar-right" id="login_form" action="index.php?a=validateConnection" method="post">
 	<div class="form-group">
 		<label class="sr-only" for="inputEmail">Identifiant</label>
 		<input class="form-control" id="inputEmail" name="login" placeholder="Identifiant">

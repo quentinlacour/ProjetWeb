@@ -14,17 +14,24 @@ class User extends Model {
 		}
 	}
 	
-	public static function create($login, $prenom, $nom, $admin, $telephone, $email){ /* Changer dans la base de donnnées le champ "NULL" pour avoir des champs non obligatoires */
-		$requete = "INSERT INTO `utilisateur`(`login`, `nom_user`, `prenom_user`, `est_admin`, `telephone`, `email`) VALUES (:login, :nom_user, :prenom_user, :est_admin, :telephone, 
-							:email);";
+	public static function create($login, $prenom, $nom, $admin, $telephone, $email, $password){ /* Changer dans la base de donnnées le champ "NULL" pour avoir des champs non obligatoires */
+		$requete = "INSERT INTO `utilisateur`(`login`, `nom_user`, `prenom_user`, `est_admin`, `telephone`, `email`, `password`) VALUES (:login, :nom_user, :prenom_user,
+				:est_admin, :telephone, :email, :password);";
 		if (self::isLoginUsed($login)){
 			echo 'Login déjà utilisé !';
 			exit();
 		}
 		else{
-			$user = Model::executeRequest($requete, array(':login' => $login, ':nom_user' => $nom, ':prenom_user' => $prenom, ':est_admin' => $admin, ':telephone' => $telephone, ':email' => $email));
+			$user = Model::executeRequest($requete, array(':login' => $login, ':nom_user' => $nom, ':prenom_user' => $prenom, ':est_admin' => $admin, 
+				':telephone' => $telephone, ':email' => $email, ':password' => $password));
 		}
 		return $user;
+	}
+	
+	public static function connexion($login, $password){
+		$requete = "SELECT password FROM utilisateur WHERE utilisateur.login = :login";
+		$stmt = Model::executeRequest($requete, array(':login' => $login));
+		return $stmt;
 	}
 	
 	
@@ -32,7 +39,6 @@ class User extends Model {
 	public static function getEmailByLogin($login){
 		$requete = "SELECT email FROM utilisateur WHERE utilisateur.login = :login";
 		$user = Model::executeRequest($requete, array(':login' => $login));
-		print_r($user);
 		if($user == null){
 			echo "Cet utilisateur n'existe pas !";
 		}
@@ -45,7 +51,6 @@ class User extends Model {
 	public static function getTelephoneByLogin($login){
 		$requete = "SELECT telephone FROM utilisateur WHERE utilisateur.login = :login";
 		$user = Model::executeRequest($requete, array(':login' => $login));
-		print_r($user);
 		if($user == null){
 			echo "Cet utilisateur n'existe pas !";
 		}
