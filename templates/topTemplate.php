@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo __BASE_URL; ?>">StarIMT</a>
+      <a class="navbar-brand" href="<?php echo __BASE_URL; ?>">TravelMines</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

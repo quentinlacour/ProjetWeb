@@ -1,4 +1,3 @@
-
 <ul class="nav navbar-nav">
    <li <?php
 	  	if($controller->getActionName()=='defaultAction')

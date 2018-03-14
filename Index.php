@@ -40,4 +40,5 @@
 		
 	// print_r(User::create('Julou06test1print', 'Jules', 'Claussen', '1', '0777919638', 'jules.claussen@sfr.fr', 'testmdp')); // Test la création d'un utilisateur
 	// print_r(User::getEmailByLogin('Julou06')); //Test la récupération d'email par login
+
 ?>

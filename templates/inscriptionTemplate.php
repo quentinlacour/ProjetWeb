@@ -1,6 +1,7 @@
 <?php
 
 
+
   	if(!isset($inputPasswordError))  
   		$inputPasswordError = false;
   	if(!isset($inputPasswordFeedbackMsg))  
@@ -23,7 +24,7 @@
 ?>
 
 
-<div id="content">
+
 
 <h2>Inscription</h2>
 

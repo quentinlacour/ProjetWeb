@@ -2,6 +2,16 @@
 /* general defaults */
 
 body {
+
+html { 
+	margin:0;
+	padding:0;
+	background: url(css/imgs/aston-martin-db11-v8.jpg) no-repeat center fixed; 
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
+	}
+	
+	background-color: black;
 	font-size: 16px;
 }
 

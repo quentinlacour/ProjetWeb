@@ -4,7 +4,7 @@
 <nav class="navbar navbar-default navbar-fixed-bottom navbar-small">
       <div class="container-fluid">
         <div class="navbar-header">
-          <p class="navbar-text">&copy; Luc, 2014</p>
+          <p class="navbar-text">&copy; TravelMines, 2018</p>
         </div>
        <nav class="nav navbar-nav navbar-right">
          <!-- <a class="">Debug</a> -->
