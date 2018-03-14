@@ -33,6 +33,8 @@ class AnonymousController extends Controller {
 				$view->render();
 			} 
 			else {
+				$view = new View($this,'index');
+				$view->render();
 				$newRequest = new Request();
 				$newRequest->write('controller','user');
 				$newRequest->write('user',$user->id());
@@ -55,12 +57,20 @@ class AnonymousController extends Controller {
 			$tmp = $user->fetch();
 			// print_r($tmp);
 			if($password == $tmp['password']){
-				echo 'Vous êtes connecté';
+				?>
+				<div style="color:White;"> 
+				Vous êtes connecté
+				</div>
+				<?php
 				$view = new View($this,'index');
 				$view->render();
 			}
 			else {
-				echo 'MDP PAS BON';
+				?>
+				<div style="color:White;"> 
+				Le mot de passe n'est pas bon
+				</div>
+				<?php
 				$view = new View($this,'index');
 				$view->setArg('inscErrorText', 'Le couple mot de passe/Login ne correspond pas');
 				$view->render();
