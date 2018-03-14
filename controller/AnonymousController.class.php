@@ -36,8 +36,8 @@ class AnonymousController extends Controller {
 				$view = new View($this,'index');
 				$view->render();
 				$newRequest = new Request();
-				$newRequest->write('controller','user');
-				$newRequest->write('user',$user->id());
+				$newRequest->write('c','user');
+				//$newRequest->write('user',$user->id());
 				Dispatcher::getCurrentDispatcher()->dispatch($newRequest);
 			}
 		}

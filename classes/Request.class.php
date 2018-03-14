@@ -49,7 +49,6 @@ class Request extends MyObject {
    
    public function write($params, $value){
 	   $_GET[$params] = $value;
-	   exit();
    }
    
 }
