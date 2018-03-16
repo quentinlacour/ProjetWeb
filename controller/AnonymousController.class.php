@@ -37,7 +37,6 @@ class AnonymousController extends Controller {
 				$view->render();
 				$newRequest = new Request();
 				$newRequest->write('c','user');
-				//$newRequest->write('user',$user->id());
 				Dispatcher::getCurrentDispatcher()->dispatch($newRequest);
 			}
 		}
@@ -57,22 +56,17 @@ class AnonymousController extends Controller {
 			$tmp = $user->fetch();
 			// print_r($tmp);
 			if($password == $tmp['password']){
-				?>
-				<div style="color:White;"> 
-				Vous êtes connecté
-				</div>
-				<?php
-				$view = new View($this,'index');
+				$newRequest = new Request();
+				$newRequest->write('c','user');
+				$newRequest->write('a','defaultAction');
+				Dispatcher::getCurrentDispatcher()->dispatch($newRequest);
+				$view = new UserView($this, 'index');
 				$view->render();
 			}
 			else {
-				?>
-				<div style="color:White;"> 
-				Le mot de passe n'est pas bon
-				</div>
-				<?php
-				$view = new View($this,'index');
-				$view->setArg('inscErrorText', 'Le couple mot de passe/Login ne correspond pas');
+				$newRequest = new Request();
+				Dispatcher::getCurrentDispatcher()->dispatch($newRequest);
+				$view = new View($this, 'inscription');
 				$view->render();
 			}
 		}
