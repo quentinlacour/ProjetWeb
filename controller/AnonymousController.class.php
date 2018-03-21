@@ -54,19 +54,18 @@ class AnonymousController extends Controller {
 		else {
 			$user = User::connexion($login, $password);
 			$tmp = $user->fetch();
-			// print_r($tmp);
+			$newRequest = new Request();
 			if($password == $tmp['password']){
-				$newRequest = new Request();
 				$newRequest->write('c','user');
-				$newRequest->write('a','defaultAction');
-				Dispatcher::getCurrentDispatcher()->dispatch($newRequest);
+				session_start();
+				$_SESSION["nouvelleSession"] = $login;
+				Dispatcher::getCurrentDispatcher()->dispatch($newRequest); //A quoi sert cette ligne ?
 				$view = new UserView($this, 'index');
 				$view->render();
 			}
-			else {
-				$newRequest = new Request();
+			else { // MODIFIER
 				Dispatcher::getCurrentDispatcher()->dispatch($newRequest);
-				$view = new View($this, 'inscription');
+				$view = new View($this, 'index');
 				$view->render();
 			}
 		}

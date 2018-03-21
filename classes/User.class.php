@@ -58,6 +58,17 @@ class User extends Model {
 			return $user->fetchAll();
 		}
 	}
+	
+	public static function getPasswordByLogin($login){
+		$requete = "SELECT password FROM utilisateur WHERE utilisateur.password = :password";
+		$user = Model::executeRequest($requete, array(':password' => $login));
+		if($user == null){
+			echo "Cet utilisateur n'existe pas !";
+		}
+		else{
+			return $user->fetchAll();
+		}
+	}
    
 }
 
