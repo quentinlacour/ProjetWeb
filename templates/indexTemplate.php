@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <body id="page-top" background="css/imgs/aston_martin.jpg" >
-
 
     <!-- Intro Header -->
     <header class="masthead">

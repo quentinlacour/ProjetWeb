@@ -1,3 +1,4 @@
+
 #mainNav {
   background-color: #212529;
 }
@@ -7,7 +8,7 @@
   right: 0;
   padding: 13px;
   text-transform: uppercase;
-  color: white;
+  color: rgb(255, 255, 255);
   border: 0;
   background-color: #fed136;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -23,11 +24,11 @@
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 90%;
+  font-size: 100%;
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
-  color: white;
+  color: rgb(106, 129, 119);
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
