@@ -22,14 +22,54 @@
   	// if(!isset(FeedbackMsg))
   	// 	FeedbackMsg = "Error";
 ?>
+<div class="container auth">
+    <h1 class="text-center">Bootstrap form theme <span>It's nice!</span> </h1>
+    <div id="big-form" class="well auth-box">
+      <form>
+        <fieldset>
+
+          <!-- Form Name -->
+          <legend>Nice form example</legend>
+
+          <div class="btn-group">
+            <a href="index.html" class="btn btn-default">All</a>
+            <a href="example1.html" class="btn btn-default">example 1</a>
+            <a href="example2.html" class="btn btn-default">example 2</a>
+          </div>
 
 
+          <!-- Text input-->
+          <div class="form-group">
+            <label class=" control-label" for="textinput">Username</label>  
+            <div class="">
+              <input id="textinput" name="textinput" placeholder="Username" class="form-control input-md" type="text">
+              <span class="help-block">help</span>  
+            </div>
+          </div>
+
+          <!-- Password input-->
+          <div class="form-group">
+            <label class=" control-label" for="passwordinput">Password</label>
+            <div class="">
+              <input id="passwordinput" name="passwordinput" placeholder="Password" class="form-control input-md" type="password">
+              <span class="help-block">help</span>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  
+  
+  
     <section id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Créer un compte</h2>
+            <h3 class="section-subheading text-muted">Inscris toi vite pour voyager avec nous!</h3>
           </div>
         </div>
         <div class="row">

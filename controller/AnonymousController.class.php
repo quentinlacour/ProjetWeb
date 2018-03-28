@@ -9,7 +9,7 @@ class AnonymousController extends Controller {
 	}
 	
 	public function inscription($request){
-		$view = new View($this, 'inscription');
+		$view = new FormView($this, 'inscription');
 		$view->render();
 	}
 	
