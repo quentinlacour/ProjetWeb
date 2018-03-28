@@ -21,10 +21,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
-<<<<<<< HEAD
 	<link href="css/menuAgency.css" rel="stylesheet">
 	
-=======
->>>>>>> 2d04f219f6412e0f8e1409f9e740d1acab4e0af8
 
   </head>

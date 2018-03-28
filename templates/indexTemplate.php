@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-<<<<<<< HEAD
   <body id="page-top" background="css/imgs/aston_martin.jpg" >
-=======
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
-
-<title>Agency - Start Bootstrap Theme</title>
-
-<!-- Bootstrap core CSS -->
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Custom fonts for this template -->
-<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-<!-- Custom styles for this template -->
-<link href="css/agency.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top">
->>>>>>> 2d04f219f6412e0f8e1409f9e740d1acab4e0af8
 
 
     <!-- Intro Header -->
-		<header class="masthead">
+    <header class="masthead">
+      
+        <div class="container">
+					<div align = "center">
+            
+              <h1 class="brand-heading"style="color:White;">TravelMines</h1>
+              <p class="intro-text" style="color:White;" >Jamais aller en cours n'a été aussi simple !
+                <br></p>					
+          </div>
+        </div>
+      
+		</header>
+	
+		<br />
+		<br />
+		<br />
+		<br />
+		<div class="container">
+			<div align = "center">
+			<div class="mx-auto" style="width: 150px ">
+							<label class="sr-only" for="inputEmail">Trouver un trajet</label>
+									<input class="form-control"  placeholder="Trouver un trajet">		
+									<div class="form-group">
+									<br />
+							<label class="sr-only" for="inputPassword">Proposer un trajet</label>
+							<input type="text" class="form-control"  placeholder="Proposer un trajet">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br /><br /><br /><br /><br /><br />
+
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
       <div class="container">
-        <div class="intro-text">
-          <div class="intro-lead-in">Bienvenue sur TravelMines !</div>
-          <div class="intro-heading text-uppercase">Bonjour Cloporte</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Trouver un Trajet</a>
+        <div class="row">
+          <div class="col-lg-20 mx-auto">
+            <h2 style="color:White;">Qui sommes nous ?</h2>
+            <p style="color:White;">TravelMines est un site de covoiturage pensé pour faciliter les trajets entre les différents sites de l'école.
+           
+            
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
-		
+
+
+  
+
     <!-- Map Section -->
     <div id="map"></div>
 
