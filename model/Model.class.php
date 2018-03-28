@@ -3,6 +3,12 @@
 class Model extends MyObject {
 	
 	private static $BDD;
+	protected $tabRequetes = array();
+	
+	
+	public static function addSqlRequest($key, $requete){
+		tabRequetes[$key] = $requete;
+	}
 	
 	protected static function executeRequest($requeteSQL,  $parameters = null){
 		if ($parameters == null){
