@@ -27,15 +27,12 @@ class AutoLoader extends MyObject {
 
       
         require_once( $fileToLoad);
-        
-        
-
-      
     }
 }
     
-
-
-
 $__LOADER = new AutoLoader();
+
+require_once(__ROOT_DIR . "/sql/Trajet.sql.php");
+
+
 ?>
