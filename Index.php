@@ -1,4 +1,8 @@
+
+
 <?php 	
+
+	
 
 	// define __ROOT_DIR constant which contains the absolute path on disk
 	// of the directory that contains this file (index.php)
