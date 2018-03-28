@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.php"> Travel Mines</a>
+        <a class="navbar-brand js-scroll-trigger" href="index.php" > Travel Mines</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Accueil</a>
+              <a class="nav-link js-scroll-trigger" href="#services" >Accueil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="index.php?c=anonymous&amp;a=inscription">Inscription</a>
