@@ -21,8 +21,6 @@
     <!-- Map Section -->
     <div id="map"></div>
 
-  
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -35,7 +33,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
-	<link rel="stylesheet" href="css/style.css">
+  	<link rel="stylesheet" href="css/style.css">
   </body>
 
 </html>
