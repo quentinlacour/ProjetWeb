@@ -1,5 +1,4 @@
-
-		</div><!--/.container-fluid -->
+<!--	</div><!--/.container-fluid 
 
 <nav class="navbar navbar-default navbar-fixed-bottom navbar-small">
       <div class="container-fluid">
@@ -7,7 +6,7 @@
           <p class="navbar-text">&copy; TravelMines, 2018</p>
         </div>
        <nav class="nav navbar-nav navbar-right">
-         <!-- <a class="">Debug</a> -->
+         <!-- <a class="">Debug</a> 
 			<?php if(__DEBUG): ?>
 			<button type="submit" class="btn btn-xs btn-danger" onclick="showDebug()">Debug</button>
 		<?php endif ?>
@@ -18,4 +17,4 @@
 <script src="<?php echo __BASE_URL; ?>/js/utils.js"></script>
 
 	</body>
-</html>
+</html> -->
