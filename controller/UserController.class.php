@@ -7,6 +7,10 @@ class UserController extends Controller {
 		$view->render();
 	}
 	
+	public function index($request) {
+		$view = new UserView($this, 'index');
+		$view->render();
+	}
 	
 	public function inscription($request) {
 		$view = new View($this, 'inscription');
@@ -15,6 +19,11 @@ class UserController extends Controller {
 	
 	public function monCompte($request) {
 		$view = new UserView($this, 'monCompte');
+		$view->render();
+	}
+	
+	public function mesTrajets($request) {
+		$view = new UserView($this, 'mesTrajets');
 		$view->render();
 	}
    
