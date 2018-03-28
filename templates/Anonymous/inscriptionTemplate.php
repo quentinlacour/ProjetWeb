@@ -1,6 +1,5 @@
+
 <?php
-
-
 
   	if(!isset($inputPasswordError))  
   		$inputPasswordError = false;
@@ -23,37 +22,64 @@
   	// 	FeedbackMsg = "Error";
 ?>
 <div class="container auth">
-    <h1 class="text-center">Bootstrap form theme <span>It's nice!</span> </h1>
     <div id="big-form" class="well auth-box">
-      <form>
+      <form action="index.php?a=validateInscription" method="post">
         <fieldset>
 
           <!-- Form Name -->
-          <legend>Nice form example</legend>
-
-          <div class="btn-group">
-            <a href="index.html" class="btn btn-default">All</a>
-            <a href="example1.html" class="btn btn-default">example 1</a>
-            <a href="example2.html" class="btn btn-default">example 2</a>
-          </div>
+          <legend align="center">Rejoignez nous ! </legend>
 
 
           <!-- Text input-->
           <div class="form-group">
-            <label class=" control-label" for="textinput">Username</label>  
-            <div class="">
-              <input id="textinput" name="textinput" placeholder="Username" class="form-control input-md" type="text">
-              <span class="help-block">help</span>  
+            <div class="form-group">
+              <input id="inputLogin" name="inscLogin" placeholder="Login" class="form-control input-md" type="text">
             </div>
           </div>
 
           <!-- Password input-->
           <div class="form-group">
-            <label class=" control-label" for="passwordinput">Password</label>
             <div class="">
-              <input id="passwordinput" name="passwordinput" placeholder="Password" class="form-control input-md" type="password">
-              <span class="help-block">help</span>
+              <input id="inputPassword" name="inscPassword" placeholder="Mot de passe" class="form-control input-md" type="password">
             </div>
+          </div>
+
+          <div class="form-group">
+            <div class="">
+              <input id="inputConfirmPassword" name="inscPassword2" placeholder="Confirmer mot de passe" class="form-control input-md" type="password">
+            </div>
+          </div>
+          <!-- Name input-->
+          <div class="form-group">
+            <div class="form-group">
+              <input id="inputLastname" name="inputLastname" placeholder="Nom" class="form-control input-md" type="text">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-group">
+              <input id="inputFirstname" name="inputFirstname" placeholder="Prenom" class="form-control input-md" type="text">
+            </div>
+          </div>
+
+           <!-- Phone input-->
+           <div class="form-group">
+            <div class="form-group">
+              <input id="inputTelephone" name="inputTelephone" placeholder="Telephone" class="form-control input-md" type="text">
+            </div>
+          </div>
+
+          <!-- Mail input-->
+          <div class="form-group">
+            <div class="form-group">
+              <input id="inputEmail" name="inputEmail" placeholder="Email" class="form-control input-md" type="email">
+            </div>
+          </div>
+          
+
+          <!-- Création compte-->
+          <div class="btn-group" >
+            <input type="submit" value="Créer mon compte" name="boutonCreerCompte" class="btn btn-default" ></input>
           </div>
 
         </fieldset>
@@ -63,75 +89,3 @@
   </div>
   
   
-  
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Créer un compte</h2>
-            <h3 class="section-subheading text-muted">Inscris toi vite pour voyager avec nous!</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate action="index.php?a=validateInscription" method="post">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input class="form-control" id="inputLogin" name="inscLogin" type="text" placeholder="Login" required data-validation-required-message="Entrez votre identifiant">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="inputPassword" name="inscPassword" type="password" placeholder="Mot de passe" required data-validation-required-message="Choisir un mot de passe">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="inputConfirmPassword" name="inscPassword2" type="password" placeholder="Confirmez Mot de passe" required data-validation-required-message="Confirmez votre mot de passe">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="inputLastname" name="inputLastname" type="text" placeholder="Nom" required data-validation-required-message="Entrez votre nom">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="inputFirstname" name="inputFirstname" type="text" placeholder="Prenom" required data-validation-required-message="Entrez votre prénom">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="inputTelephone" name="inputTelephone" type="tel" placeholder="Téléphone" required data-validation-required-message="Entrez votre numéro de téléphone">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="inputEmail" name="inputEmail" type="email" placeholder="Email" required data-validation-required-message="Entrez votre email">
-                    <p class="help-block text-danger"></p>
-                  </div>
-					<label class="checkbox-inline">
-						<input type="checkbox" checked value="agree" id="inputAcceptConditions" name='inputAcceptConditions'><a href="#"> J'accepte les conditions</a>.
-					</label>				  
-                </div>
-                <div class="clearfix"></div>
-				<div class="form-group">
-					<div class="col-sm-offset-3 col-sm-3">
-					<input type="submit" class="btn btn-primary" value="Créer mon compte" name="boutonCreerCompte">
-					<input type="reset" class="btn btn-default" value="Annuler">
-				</div>
-				</div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-        <div class="form-group requiredField <?php if(isset($inputAcceptConditionsError) && $inputAcceptConditionsError) echo 'has-error'; if(isset($inputAcceptConditionsFeedbackMsg)) echo ' has-feedback' ?>">
-				<div class="col-sm-offset-3 col-sm-3">
-                <label class="checkbox-inline">
-                    <input type="checkbox" checked value="agree" id="inputAcceptConditions" name='inputAcceptConditions'>J'accepte <a href="#">les conditions</a>.
-                </label>
-            </div>
-   			 <?php if(isset($inputAcceptConditionsFeedbackMsg)): ?>
-   	       	 <div id="inputSuccess3Status" class="col-sm-4 help-block feedback" aria-hidden="true">
-   			 		<span class="feedback-error"><?php echo $inputAcceptConditionsFeedbackMsg; ?></span>
-   				 </div>
-   			 <?php endif ?>
-        </div>
-		  
