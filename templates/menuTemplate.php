@@ -1,4 +1,4 @@
- <ul class="nav navbar-nav">
+<ul class="nav navbar-nav">
    <li <?php
 	  	if($controller->getActionName()=='defaultAction')
 			echo 'class="active"';
