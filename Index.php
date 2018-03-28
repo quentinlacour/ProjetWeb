@@ -41,5 +41,6 @@
 	// print_r(User::create('Julou069874987489', 'Jules', 'Claussen', '1', '0777919638', 'jules.claussen@sfr.fr', 'testmdp')); // Test la création d'un utilisateur
 	// print_r(User::getEmailByLogin('Julou06')); //Test la récupération d'email par login
 	// print_r(Trajet::create('Trajet numero 1', '1', 'Douai', 'Lille', '2018-03-20 10:00:00', '2018-03-20 10:42:00', '5')); //Test création trajet - Attention format Date
+	print_r(Trajet::create('Trajet numero 1', '2', 'Douai', 'Lille', '2018-03-20 10:00:00', '2018-03-20 10:42:00', '5')); //Test création trajet - Attention format Date
 
 ?>

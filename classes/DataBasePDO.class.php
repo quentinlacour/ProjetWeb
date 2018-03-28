@@ -21,7 +21,6 @@ class DataBasePDO extends MyObject {
    public function getPDOInstance(){
 	   return $this->PDOInstance;
    }
-
    
 }
 
