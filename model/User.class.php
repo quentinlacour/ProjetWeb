@@ -1,7 +1,8 @@
 <?php
 
 class User extends Model {
-	
+
+
 	public static function isLoginUsed($login){
 		$user = Model::executeRequest('select count(*) from utilisateur where utilisateur.login = :login', array(':login' => $login));
 		foreach($user as $u){
