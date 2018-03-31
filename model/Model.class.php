@@ -11,21 +11,19 @@ class Model extends MyObject {
 		
 	}
 	
-	protected static function executeRequest($requeteSQL,  $parameters = null){
-		if ($parameters == null){
-			$resultat = static::getBDD()-> getPDOInstance() -> query($requeteSQL);
-		}
-		else{
-			$resultat = static::getBDD()-> getPDOInstance() -> prepare($requeteSQL);
-			$resultat->execute($parameters);
-		}
-		return $resultat;
-	}
+	// protected static function executeRequest($requeteSQL,  $parameters = null){
+		// if ($parameters == null){
+			// $resultat = static::getBDD()-> getPDOInstance() -> query($requeteSQL);
+		// }
+		// else{
+			// $resultat = static::getBDD()-> getPDOInstance() -> prepare($requeteSQL);
+			// $resultat->execute($parameters);
+		// }
+		// return $resultat;
+	// }
 	
-	protected static function executeRequest2($cleRequete,  $parameters = null){
-		print_r(static::$tabRequetes);
+	protected static function executeRequest($cleRequete,  $parameters = null){
 		$requete = static::$tabRequetes[$cleRequete];
-		print_r($requete);
 		
 		if ($parameters == null){
 			$resultat = static::getBDD()-> getPDOInstance() -> query($requete);

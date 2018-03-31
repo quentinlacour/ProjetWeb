@@ -15,20 +15,28 @@ class AnonymousController extends Controller {
 	
 	public function validateInscription($request) {
 		$login = $request->read('inscLogin');
+		$password = $request->read('inscPassword');
+		$nom = $request->read('inputLastname');
+		$prenom = $request->read('inputFirstname');
+		$email = $request->read('inputEmail');
+		$telephone = $request->read('inputTelephone');
+		
 		if(User::isLoginUsed($login)) {
-			$view = new View($this,'inscription');
+			$view = new FormView($this,'inscription');
 			$view->setArg('inscErrorText','This login is already used');
 			$view->render();
 		} 
+		if($login == NULL || $nom == NULL || $prenom == NULL ||$password == NULL || $passwordVerif ==NULL){
+			$view = new FormView($this,'inscription');
+			$view->render();
+			echo "<legend align='center' style='Color:Red;'> Il manque des informations importantes </legend>";
+		}
+		
 		else {
-			$password = $request->read('inscPassword');
-			$nom = $request->read('inputLastname');
-			$prenom = $request->read('inputFirstname');
-			$email = $request->read('inputEmail');
-			$telephone = $request->read('inputTelephone');
 			$user = User::create($login, $prenom, $nom, 0, $telephone, $email, $password);
+
 			if(!isset($user)) {
-				$view = new View($this,'inscription');
+				$view = new FormView($this,'inscription');
 				$view->setArg('inscErrorText', 'Cannot complete inscription');
 				$view->render();
 			} 
