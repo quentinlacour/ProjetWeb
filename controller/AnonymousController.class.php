@@ -16,6 +16,7 @@ class AnonymousController extends Controller {
 	public function validateInscription($request) {
 		$login = $request->read('inscLogin');
 		$password = $request->read('inscPassword');
+		$passwordVerif = $request->read('inscPassword2');
 		$nom = $request->read('inputLastname');
 		$prenom = $request->read('inputFirstname');
 		$email = $request->read('inputEmail');
@@ -58,16 +59,27 @@ class AnonymousController extends Controller {
 			$view = new View($this,'index');
 			$view->setArg('inscErrorText',"Ce login n'existe pas");
 			$view->render();
+			
 		} 
 		else {
 			$user = User::connexion($login, $password);
 			$tmp = $user->fetch();
+			$nom = User::getNameByLogin($login)[0][0];
+			$prenom = User::getPrenomByLogin($login)[0][0];
+			$email = User::getEmailByLogin($login)[0][0];
+			$telephone = User::getTelephoneByLogin($login)[0][0];
+			$password = User::getPasswordByLogin($login)[0][0];
+			
 			$newRequest = new Request();
 			if($password == $tmp['password']){
 				$newRequest->write('c','user');
 				session_start();
-				$_SESSION["nouvelleSession"] = $login;
-				Dispatcher::getCurrentDispatcher()->dispatch($newRequest); //A quoi sert cette ligne ?
+				$_SESSION["login"] = $login;
+				$_SESSION["nom"] = $nom;
+				$_SESSION["prenom"] = $prenom;
+				$_SESSION["email"] = $email;
+				$_SESSION["telephone"] = $telephone;
+				$_SESSION["password"] = $password;
 				$view = new UserView($this, 'index');
 				$view->render();
 			}
