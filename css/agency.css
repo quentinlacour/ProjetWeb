@@ -1,6 +1,14 @@
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background:url("../BootStrap/img/Form-BG.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed; 
+  background-repeat:no-repeat;
 }
 
 p {
@@ -99,16 +107,7 @@ img::-moz-selection {
 
 
 header.masthead {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  background-image: url("../BootStrap/img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
 }
 
 header.masthead .intro-text {
