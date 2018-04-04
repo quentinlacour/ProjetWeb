@@ -29,10 +29,6 @@ class UserController extends Controller {
 		$view->render();
 	}
 	
-	public function mesTrajets($request) {
-		$view = new TrajetView($this, 'mesTrajets');
-		$view->render();
-	}
 	
 	public function enregistrerInfos($request){
 		$email = $request->read('emailChg');
