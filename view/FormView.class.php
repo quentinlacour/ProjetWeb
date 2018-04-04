@@ -4,7 +4,7 @@ class FormView extends View {
 	
 	public function __construct($controller, $templateName, $args = array()) {
 		parent::__construct($controller, $templateName, $args = array());
-		$this->templateNames['head'] = 'Anonymous/head';
+		$this->templateNames['head'] = 'head';
 		$this->templateNames['content'] = 'Anonymous/inscription';
 	} 
    

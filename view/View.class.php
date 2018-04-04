@@ -12,6 +12,7 @@ class View extends MyObject {
       $this->templateNames['menu'] = 'menu';
       $this->templateNames['content'] = $templateName;
 	  $this->templateNames['foot'] = 'foot';
+
       $this->args = $args;
       $this->args['controller'] = $controller;
       $this->args['view'] = $this;		
@@ -56,7 +57,7 @@ class View extends MyObject {
       $this->loadTemplate($this->templateNames['head'], $this->args);
       $this->loadTemplate($this->templateNames['menu'], $this->args);
       $this->loadTemplate($this->templateNames['content'], $this->args);
-      //$this->loadTemplate($this->templateNames['foot'], $this->args);
+      $this->loadTemplate($this->templateNames['foot'], $this->args);
    }
 }
 

@@ -22,8 +22,8 @@
     <div id="map"></div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -32,7 +32,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+    <script src="js/grayscale.js"></script>
   	<link rel="stylesheet" href="css/style.css">
   </body>
 

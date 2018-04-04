@@ -1,28 +1,54 @@
+<section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Rejoignez nous !</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form action="index.php?a=validateInscription" method="post" id="inscriptionForm" >
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                   <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <input type="submit" value="Créer mon compte" name="boutonCreerCompte" class="btn btn-primary btn-xl text-uppercase"></input>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<?php
-
-  	if(!isset($inputPasswordError))  
-  		$inputPasswordError = false;
-  	if(!isset($inputPasswordFeedbackMsg))  
-  		$inputPasswordFeedbackMsg = "Error";
-
-  	if(!isset($inputPasswordError2))  
-  		$inputPasswordError2 = false;
-  	if(!isset($inputPasswordFeedbackMsg2))  
-  		$inputPasswordFeedbackMsg2 = "Error";
-
-  	if(!isset($inputLastnameError))  
-  		$inputLastnameError = false;
-  	if(!isset($inputLastnameErrorFeedbackMsg))  
-  		$inputLastnameErrorFeedbackMsg = "Error";
-
-  	// if(!isset(Error))
-  	// 	 = false;
-  	// if(!isset(FeedbackMsg))
-  	// 	FeedbackMsg = "Error";
-?>
-
-</br></br></br></br></br></br></br>
 
 
 
@@ -30,11 +56,6 @@
     <div id="big-form" class="well auth-box">
       <form action="index.php?a=validateInscription" method="post">
         <fieldset>
-
-          <!-- Form Name -->
-          <legend align="center">Rejoignez nous ! </legend>
-
-
           <!-- Text input-->
           <div class="form-group">
             <div class="form-group">
