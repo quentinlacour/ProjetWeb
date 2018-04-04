@@ -21,6 +21,11 @@
   	// if(!isset(FeedbackMsg))
   	// 	FeedbackMsg = "Error";
 ?>
+
+</br></br></br></br></br></br></br></br>
+
+
+
 <div class="container auth">
     <div id="big-form" class="well auth-box">
       <form action="index.php?a=validateInscription" method="post">
