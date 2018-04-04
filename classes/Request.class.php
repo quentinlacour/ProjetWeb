@@ -44,8 +44,8 @@ class Request extends MyObject {
 	   if(isset($_POST[$params])){
 		   return $_POST[$params];
 	   }
-	   return "";
-	   // throw new Exception ("The parameter ".$params." isn't defined in the request \n", $this->debug());
+	   // return "";
+	   throw new Exception ("The parameter ".$params." isn't defined in the request \n", $this->debug());
    }
    
    public function write($params, $value){

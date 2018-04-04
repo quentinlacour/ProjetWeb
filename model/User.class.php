@@ -2,7 +2,7 @@
 
 class User extends Model {
 
-
+		/* Est-ce que le login est utilisé ? */
 	public static function isLoginUsed($login){
 		$user = Model::executeRequest('CountUsersWithLogin', array(':login' => $login));
 		foreach($user as $u){
@@ -15,6 +15,7 @@ class User extends Model {
 		}
 	}
 	
+	/* Créer un utilisateur */
 	public static function create($login, $prenom, $nom, $admin, $telephone, $email, $password){ /* Changer dans la base de donnnées le champ "NULL" pour avoir des champs non obligatoires */
 		if (self::isLoginUsed($login)){
 			echo 'Login déjà utilisé !';
@@ -27,13 +28,14 @@ class User extends Model {
 		return $user;
 	}
 	
+	/* Vérifie que le couple login-password est bon */
 	public static function connexion($login, $password){
 		$stmt = Model::executeRequest("PrintPassword", array(':login' => $login));
 		return $stmt;
 	}
 	
 	
-	/* Eventuellement faire des accesseurs aux propriétés */
+	/* ACCESSEURS AUX PROPRIETES */
 	public static function getEmailByLogin($login){
 		$user = Model::executeRequest("PrintEmail", array(':login' => $login));
 		if($user == null){
@@ -43,7 +45,6 @@ class User extends Model {
 			return $user->fetchAll();
 		}
 	}
-	
 	
 	public static function getTelephoneByLogin($login){
 		$user = Model::executeRequest("PrintTelephone", array(':login' => $login));
@@ -84,7 +85,27 @@ class User extends Model {
 			return $user->fetchAll();
 		}
 	}
+	
+	
+	/* MODIFICATION DES CHAMPS */
+	public static function changePasswordByLogin($login, $password){
+		$user = Model::executeRequest("ChangePassword", array(':password' => $password, ':login' => $login));
+		return $user->fetchAll();
+	}
+	
+	public static function changeEmailByLogin($login, $email){
+		$user = Model::executeRequest("ChangeEmail", array(':email' => $email, ':login' => $login));
+		return $user->fetchAll();
+	}
+	
+	public static function changeTelephoneByLogin($login, $telephone){
+		$user = Model::executeRequest("ChangeTelephone", array(':telephone' => $telephone, ':login' => $login));
+		return $user->fetchAll();
+	}
    
 }
+
+
+
 
 ?>

@@ -18,7 +18,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="BootStrap/img/team/1.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="BootStrap/Agency/img/team/1.jpg" alt="">
               <h4><?php echo $_SESSION["login"]; ?></h4>
               <p class="text-muted">Etudiant</p>
               <ul class="list-inline social-buttons">
@@ -52,22 +52,26 @@
                   <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
-                  <div class="timeline-heading">
+                  <div class="timeline-heading" >
                     <h4>Informations Modifiables</h4>
 					 <div class="timeline-body">
-						<h5 class="subheading">Email</h5>
-						<p class="text-muted"> 
-							<input class="form-control" id="email" name="emailChg" type="text" placeholder=<?php echo $email;?>>
-						</p> 
-						<h5 class="subheading">Telephone</h5>
-						<p class="text-muted"> 
-							<input class="form-control" id="telephone" name="telephoneChg" type="text" placeholder=<?php echo $telephone;?>>
-						</p> 
-						<h5 class="subheading">Mot de Passe</h5>
-						<p class="text-muted"> 
-							<input class="form-control" id="password" name="passwordChg" type="password" placeholder="Votre nouveau mot de passe">
-							<input class="form-control" id="password" name="password2Chg" type="password" placeholder="Confirmez votre nouveau mot de passe">
-						</p> 
+					   <form action="index.php?c=user&a=enregistrerInfos" method="post">
+				
+							<h5 class="subheading">Email</h5>
+							<p class="text-muted"> 
+								<input class="form-control" id="email" name="emailChg" type="email" placeholder=<?php echo $email;?>>
+							</p> 
+							<h5 class="subheading">Telephone</h5>
+							<p class="text-muted"> 
+								<input class="form-control" id="telephone" name="telephoneChg" type="text" placeholder=<?php echo $telephone;?>>
+							</p> 
+							<h5 class="subheading">Mot de Passe</h5>
+							<p class="text-muted"> 
+								<input class="form-control" id="password" name="passwordChg" type="password" placeholder="Votre nouveau mot de passe">
+								<input class="form-control" id="password" name="password2Chg" type="password" placeholder="Confirmez votre nouveau mot de passe">
+							</p> 
+							<input type="submit" value="Enregistrer" name="boutonEnregistrerInfo" class="btn btn-default" ></input>
+						</form>
 					</div>
                   </div>
                 </div>
@@ -93,7 +97,7 @@
 			  
 			  
 			  </ul>
-			  <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="index.php?c=user&a=enregistrerInfos">Enregistrer les changements</a>
+			
             </div>
           </div>
         </div>
