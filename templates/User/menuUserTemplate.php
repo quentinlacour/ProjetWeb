@@ -10,13 +10,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php?c=user&amp;a=index">Accueil</a>
+              <a class="nav-link js-scroll-trigger" href="index.php?c=user&a=index">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php?c=user&amp;a=monCompte">Mon Compte</a>
+              <a class="nav-link js-scroll-trigger" href="index.php?c=user&a=monCompte">Mon Compte</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php?c=trajet&amp;a=mesTrajets">Mes Trajets</a>
+              <a class="nav-link js-scroll-trigger" href="index.php?c=trajet&a=mesTrajets">Mes Trajets</a>
             </li>
 		  </ul>
 		  <ul class="navbar-nav text-uppercase ml-auto">

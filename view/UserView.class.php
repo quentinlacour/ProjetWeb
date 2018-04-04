@@ -12,6 +12,7 @@ class UserView extends View {
 		$this->loadTemplate($this->templateNames['head'], $this->args);
 		$this->loadTemplate($this->templateNames['menu'], $this->args);
 		$this->loadTemplate('User/' . $this->templateNames['content'], $this->args);
+		$this->loadTemplate($this->templateNames['foot'], $this->args);
    }
 
 }
