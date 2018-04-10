@@ -35,6 +35,33 @@ class TrajetController extends Controller {
 		$view = new TrajetView($this, 'creerTrajet');
 		$view->render();
 	}
+	
+	public function creationTrajet($request) {
+		$view = new TrajetView($this, 'creerTrajet');
+		$view->render();
+	}
+	
+	public function chercheTrajet($request) {
+		$date = $request->read('date');
+		$heure = $request->read('heure');
+		$lieuDepart = $request->read('lieuDepart');
+		$lieuArrivee = $request->read('lieuArrivee');
+		$dateHeure = $date . ' ' . $heure . ':00'; // pour être au format '2018-04-07 22:30:00';
+		$trajets = Trajet::afficherTrajet($lieuDepart, $lieuArrivee, $dateHeure);
+		// print_r($trajets['nom_trajet']); //marche aussi avec [0]
+		// print_r($trajets['lieu_depart']);	
+		// print_r($trajets['lieu_arrivee']);	
+		// print_r($trajets['nombre_places']);	
+		// print_r($trajets['heure_depart']);	
+		
+		$view = new TrajetView($this, 'rechercherAfficherTrajet');
+		$view->render();
+	}
 }
+
+
+
+
+
 
 ?>

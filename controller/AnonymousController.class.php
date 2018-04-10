@@ -69,6 +69,7 @@ class AnonymousController extends Controller {
 			$email = User::getEmailByLogin($login)[0][0];
 			$telephone = User::getTelephoneByLogin($login)[0][0];
 			$password = User::getPasswordByLogin($login)[0][0];
+			$idUser = User::getIdByLogin($login)[0][0];
 			
 			$newRequest = new Request();
 			if($password == $tmp['password']){
@@ -80,6 +81,7 @@ class AnonymousController extends Controller {
 				$_SESSION["email"] = $email;
 				$_SESSION["telephone"] = $telephone;
 				$_SESSION["password"] = $password;
+				$_SESSION["id"] = $idUser;
 				$view = new UserView($this, 'index');
 				$view->render();
 			}

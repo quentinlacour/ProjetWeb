@@ -66,6 +66,16 @@ class User extends Model {
 		}
 	}
 	
+	public static function getIdByLogin($login){
+		$user = Model::executeRequest("PrintId", array(':login' => $login));
+		if($user == null){
+			echo "Cet utilisateur n'existe pas !";
+		}
+		else{
+			return $user->fetchAll();
+		}
+	}
+	
 	public static function getPrenomByLogin($login){
 		$user = Model::executeRequest("PrintPrenom", array(':login' => $login));
 		if($user == null){

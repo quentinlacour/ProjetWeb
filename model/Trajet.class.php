@@ -2,7 +2,8 @@
 
  
 class Trajet extends Model {
-   
+
+
 	public static function create($nomTrajet, $id_voiture, $lieu_depart, $lieu_arrivee, $heure_depart, $heure_arrivee, $nbPlaces){ /* Changer dans la base de donnnées le champ "NULL" pour avoir des champs non obligatoires */
 			
 		$cleRequete = 'CreateTrajet';
@@ -16,9 +17,17 @@ class Trajet extends Model {
 	public static function afficherTrajet($lieu_depart, $lieu_arrivee, $heure_depart){
 		
 		$cleRequete = "AfficherTrajet";		
-		$trajet = Model::executeRequest($$cleRequete, array(':lieu_depart' => $lieu_depart, ':lieu_arrivee' => $lieu_arrivee, ':heure_depart' => $heure_depart));
+		$trajet = Model::executeRequest($cleRequete, array(':lieu_depart' => $lieu_depart, ':lieu_arrivee' => $lieu_arrivee, ':heure_depart' => $heure_depart));
+		$result = $trajet->fetch(PDO::FETCH_BOTH);
+		return $result;
+	}
+	
+	public static function recupererVoitures($idUser){
 		
-		return $trajet;
+		$cleRequete = "RecupererVoitures";		
+		$trajet = Model::executeRequest($cleRequete, array(':id_user' => $idUser));
+		$result = $trajet->fetchAll();
+		return $result;
 	}
    
 }

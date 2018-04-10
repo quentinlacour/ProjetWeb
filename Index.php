@@ -42,5 +42,6 @@
 	// print_r(User::getEmailByLogin('Julou06')); //Test la récupération d'email par login
 	// print_r(Trajet::create('Trajet numero 1', '2', 'Douai', 'Lille', '2018-03-20 10:00:00', '2018-03-20 10:42:00', '5')); //Test création trajet - Attention format Date
 	// print_r(User::changeEmailByLogin('Julou06', 'jules.claussen@sfr.fr')); // Change l'adresse mail de Julou06 en jules.claussen...
+	// print_r(Trajet::recupererVoitures('14')); // Affiche la voiture du user 14
 
 ?>
