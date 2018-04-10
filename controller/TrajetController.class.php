@@ -37,6 +37,21 @@ class TrajetController extends Controller {
 	}
 	
 	public function creationTrajet($request) {
+		$date = $request->read('date');
+		$heure_depart = $request->read('heure_depart');
+		$heure_arrivee = $request->read('heure_arrivee');
+		$lieu_depart = $request->read('lieuDepart');
+		$lieu_arrivee = $request->read('lieuArrivee');
+		$nbPlaces = $request->read('nombrePlaces');
+		$nomTrajet = $request->read('nomTrajet');
+		$voiture = $request->read('voiture');
+		
+		$dateDepartHeure = $date . ' ' . $heure_depart . ':00';
+		$dateArriveeHeure = $date . ' ' . $heure_arrivee . ':00';
+		
+		$id_voiture = Trajet::getIdByModele($voiture)[0][0]; //permet de récupérer l'id de la voiture selectionnée
+		$trajets = Trajet::create($nomTrajet, $id_voiture, $lieu_depart, $lieu_arrivee, $dateDepartHeure, $dateDepartHeure, $nbPlaces);
+		print_r($trajets);
 		$view = new TrajetView($this, 'creerTrajet');
 		$view->render();
 	}
@@ -48,16 +63,20 @@ class TrajetController extends Controller {
 		$lieuArrivee = $request->read('lieuArrivee');
 		$dateHeure = $date . ' ' . $heure . ':00'; // pour être au format '2018-04-07 22:30:00';
 		$trajets = Trajet::afficherTrajet($lieuDepart, $lieuArrivee, $dateHeure);
-		// print_r($trajets['nom_trajet']); //marche aussi avec [0]
-		// print_r($trajets['lieu_depart']);	
-		// print_r($trajets['lieu_arrivee']);	
-		// print_r($trajets['nombre_places']);	
-		// print_r($trajets['heure_depart']);	
+		$nbTrajets = sizeof($trajets);
+			
 		
-		$view = new TrajetView($this, 'rechercherAfficherTrajet');
-		$view->render();
+		$view = new TrajetView($this, 'rechercherAfficherTrajet', $trajets);
+		$view->render($trajets);
+		// print_r($trajets[0]['nom_trajet']); //marche aussi avec [0]
+		// print_r($trajets[0]['lieu_depart']);	
+		// print_r($trajets[0]['lieu_arrivee']);	
+		// print_r($trajets[0]['nombre_places']);	
+		// print_r($trajets[0]['heure_depart']);
 	}
 }
+
+		
 
 
 

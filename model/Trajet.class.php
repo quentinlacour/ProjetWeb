@@ -18,7 +18,7 @@ class Trajet extends Model {
 		
 		$cleRequete = "AfficherTrajet";		
 		$trajet = Model::executeRequest($cleRequete, array(':lieu_depart' => $lieu_depart, ':lieu_arrivee' => $lieu_arrivee, ':heure_depart' => $heure_depart));
-		$result = $trajet->fetch(PDO::FETCH_BOTH);
+		$result = $trajet->fetchAll();
 		return $result;
 	}
 	
@@ -26,6 +26,14 @@ class Trajet extends Model {
 		
 		$cleRequete = "RecupererVoitures";		
 		$trajet = Model::executeRequest($cleRequete, array(':id_user' => $idUser));
+		$result = $trajet->fetchAll();
+		return $result;
+	}
+	
+	public static function getIdByModele($modele){
+		
+		$cleRequete = "RecupererIdVoiture";		
+		$trajet = Model::executeRequest($cleRequete, array(':modele' => $modele));
 		$result = $trajet->fetchAll();
 		return $result;
 	}

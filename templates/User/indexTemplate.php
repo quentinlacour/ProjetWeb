@@ -1,4 +1,4 @@
-  <div class="masthead">
+  <header class="masthead">
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">Bienvenue sur Travel Mines !</div>
@@ -7,5 +7,5 @@
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Proposer un trajet</a>
         </div>
       </div>
-</div>
+</header>
 

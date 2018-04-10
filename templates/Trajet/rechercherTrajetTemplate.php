@@ -1,10 +1,4 @@
-<header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-        <div class="intro-lead-in">Bienvenue sur Travel Mines !</div>
-      </div>
-    </div>
- </header>
+<section class="content-section" id="portfolio">
 
 <section id="contact">
       <div class="container">
@@ -48,3 +42,4 @@
         </div>
       </div>
     </section>
+</section>
