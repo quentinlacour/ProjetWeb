@@ -66,8 +66,9 @@ class TrajetController extends Controller {
 		$nbTrajets = sizeof($trajets);
 			
 		
-		$view = new TrajetView($this, 'rechercherAfficherTrajet', $trajets);
-		$view->render($trajets);
+		$view = new TrajetView($this, 'rechercherAfficherTrajet');
+		$view -> setArg('trajets', $trajets);
+		$view->render();
 		// print_r($trajets[0]['nom_trajet']); //marche aussi avec [0]
 		// print_r($trajets[0]['lieu_depart']);	
 		// print_r($trajets[0]['lieu_arrivee']);	

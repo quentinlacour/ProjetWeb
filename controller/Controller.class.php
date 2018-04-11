@@ -6,6 +6,7 @@ abstract class Controller extends MyObject {
 
     public function __construct($myRequest) {
         $this->request = $myRequest;
+		session_start();
 
     }
 	

@@ -1,6 +1,6 @@
 <?php
-	// $login = $_SESSION["login"];
-	// $idUser = $_SESSION["id"];
+	$login = $_SESSION["login"];
+	$idUser = $_SESSION["id"];
 	$reponse = Trajet::recupererVoitures('3');
 ?>
 

@@ -21,7 +21,7 @@
 		  </ul>
 		  <ul class="navbar-nav text-uppercase ml-auto">
 			<li class="nav-item">
-				<button id="sendMessageButton" class="btn btn-primary" type="submit">Se Deconnecter</button>
+				<button id="sendMessageButton" class="btn btn-primary" type="submit" href="index.php?c=user&a=seDeconnecter">Se Deconnecter</button>
             </li>
           </ul>
         </div>

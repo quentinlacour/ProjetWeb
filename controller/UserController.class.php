@@ -4,7 +4,6 @@ class UserController extends Controller {
 	
 	public function __construct($myRequest) {
         parent::__construct($myRequest);
-		session_start();
     }
 	
 	
@@ -28,6 +27,14 @@ class UserController extends Controller {
 		$view->render();
 	}
 	
+	public function seDeconnecter($request) {
+		session_destroy();
+		
+		$view = new AnonymousView($this, 'index');
+		$view->render();
+		print_r($_SESSION);
+	}
+	
 	
 	public function enregistrerInfos($request){
 		$email = $request->read('emailChg');
@@ -37,13 +44,16 @@ class UserController extends Controller {
 		$login = $_SESSION["login"];
 
 		if($email != ""){
+			$_SESSION["email"] = $email;
 			User::changeEmailByLogin($login, $email);
 		}
 		if($telephone != ""){
+			$_SESSION["telephone"] = $telephone;
 			User::changeTelephoneByLogin($login, $telephone);
 		}
 		if($password != ""){
 			if($password2 == $password){
+				$_SESSION["password"] = $password;
 				User::changePasswordByLogin($login, $password);
 			}
 			else{

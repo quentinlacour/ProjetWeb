@@ -74,7 +74,7 @@ class AnonymousController extends Controller {
 			$newRequest = new Request();
 			if($password == $tmp['password']){
 				$newRequest->write('c','user');
-				session_start();
+				// session_start();
 				$_SESSION["login"] = $login;
 				$_SESSION["nom"] = $nom;
 				$_SESSION["prenom"] = $prenom;

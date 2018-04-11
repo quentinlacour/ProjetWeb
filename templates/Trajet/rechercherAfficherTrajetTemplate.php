@@ -1,3 +1,7 @@
+<?php
+	print_r($this->getArg('trajets'));
+?>
+
 <section id="contact">
       <div class="container">
         <div class="row">
