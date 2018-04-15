@@ -53,7 +53,7 @@
         <div class="intro-lead-in">Bienvenue sur Travel Mines !</div>
         <div class="intro-heading text-uppercase">Pas envie de marcher ?</div>
 		<?php 
-			if($_SESSION['login']==NULL){
+			if(isset($_GET['c'])){
 				$link1 = "index.php?c=trajet&a=rechercherTrajet";
 				$link2 = "index.php?c=trajet&a=creerTrajet";
 			} 

@@ -37,6 +37,14 @@ class Trajet extends Model {
 		$result = $trajet->fetchAll();
 		return $result;
 	}
+	
+	public static function inscrireUtilisateurATrajet($id_user, $id_trajet){
+		
+		$cleRequete = "inscrireUserATrajet";		
+		$trajet = Model::executeRequest($cleRequete, array(':id_user' => $id_user, ':id_trajet' => $id_trajet));
+		$result = $trajet->fetchAll();
+		return $result;
+	}
    
 }
 

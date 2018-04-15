@@ -22,7 +22,7 @@ class TrajetController extends Controller {
 	}
 	
 	public function historiqueTrajets($request) {
-		$view = new TrajetView($this, 'historique');
+		$view = new TrajetView($this, 'historiqueTrajets');
 		$view->render();
 	}
 	
@@ -69,17 +69,17 @@ class TrajetController extends Controller {
 		$view = new TrajetView($this, 'rechercherAfficherTrajet');
 		$view -> setArg('trajets', $trajets);
 		$view->render();
-		// print_r($trajets[0]['nom_trajet']); //marche aussi avec [0]
-		// print_r($trajets[0]['lieu_depart']);	
-		// print_r($trajets[0]['lieu_arrivee']);	
-		// print_r($trajets[0]['nombre_places']);	
-		// print_r($trajets[0]['heure_depart']);
+	}
+	
+	public function inscription($request) {
+		$idTrajet = $request->read('idTrajet');
+		print_r($idTrajet);
+		
+		$trajet = Trajet::inscrireUtilisateurATrajet($_SESSION['id'], $idTrajet);
+		$view = new TrajetView($this, 'historiqueTrajets');
+		$view->render();
 	}
 }
-
-		
-
-
 
 
 

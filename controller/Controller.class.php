@@ -21,6 +21,10 @@ abstract class Controller extends MyObject {
 	public function getActionName(){
 		return $this->request->getActionName();
 	}
+	
+	public function getControllerName(){
+		return $this->request->getControllerName();
+	}
 
 
 

@@ -59,22 +59,20 @@ class AnonymousController extends Controller {
 			$view = new View($this,'index');
 			$view->setArg('inscErrorText',"Ce login n'existe pas");
 			$view->render();
+			echo "<legend align='center' style='Color:Red; position: absolute; top: 100px;'> Erreur de login </legend>";
 			
 		} 
 		else {
-			$user = User::connexion($login, $password);
-			$tmp = $user->fetch();
 			$nom = User::getNameByLogin($login)[0][0];
 			$prenom = User::getPrenomByLogin($login)[0][0];
 			$email = User::getEmailByLogin($login)[0][0];
 			$telephone = User::getTelephoneByLogin($login)[0][0];
-			$password = User::getPasswordByLogin($login)[0][0];
+			$truePassword = User::getPasswordByLogin($login)[0][0];
 			$idUser = User::getIdByLogin($login)[0][0];
+
+
 			
-			$newRequest = new Request();
-			if($password == $tmp['password']){
-				$newRequest->write('c','user');
-				// session_start();
+			if($password == $truePassword){
 				$_SESSION["login"] = $login;
 				$_SESSION["nom"] = $nom;
 				$_SESSION["prenom"] = $prenom;
@@ -85,10 +83,10 @@ class AnonymousController extends Controller {
 				$view = new UserView($this, 'index');
 				$view->render();
 			}
-			else { // MODIFIER
-				Dispatcher::getCurrentDispatcher()->dispatch($newRequest);
+			else {
 				$view = new View($this, 'index');
 				$view->render();
+				echo "<legend align='center' style='Color:Red; position: absolute; top: 100px;'> Erreur de Mot de passe </legend>";
 			}
 		}
 	}
