@@ -24,7 +24,7 @@
     position: sticky;
     top: 150px;
     left: 43%;
-    background: #ccb566;
+    background: #fed136;
     z-index: 9;
     font-family: arial;
     opacity: 0.85;
@@ -40,10 +40,11 @@
 		<br />
 		<center>Mot de Passe</center>
 		<center><input name="password" type="password" size="14" /></center>
+    <br />
 		<center><input type="submit" name="submit" value="Login" /></center>
 	</form>
-	<br />
 	<center><a href="javascript:login('hide');">Close</a></center> 
+
 </div> 
 
     <!-- Intro Header -->

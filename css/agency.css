@@ -3,7 +3,6 @@ body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
-  color: rgb(255, 255, 255);
   background:url("../BootStrap/Agency/img/Form-BG.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -84,6 +83,8 @@ section h3.section-subheading {
   border-color: #fec810 !important;
   color: rgb(106, 129, 119);
 }
+
+
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;

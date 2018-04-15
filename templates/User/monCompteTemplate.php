@@ -6,13 +6,15 @@
 	$password = $_SESSION["password"];
 	$telephone = $_SESSION["telephone"];
 ?>
-
-<section class="bg-light" id="team">
+ <link href="css/menuAgency.css" rel="stylesheet">
+<link href="css/agency.css" rel="stylesheet">
+	  
+<section  id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Mon compte</h2>
-            <h3 class="section-subheading text-muted">Un utilisateur, pas comme les autres</h3>
+            <h3 class="subheading">Un utilisateur, pas comme les autres</h3>
           </div>
         </div>
         <div class="row">
@@ -106,7 +108,7 @@
 		 
         <div class="row">
           <div class="col-lg-15 mx-auto text-center">
-            <p class="large text-muted">N'hésitez pas à mettre régulierement à jour votre compte !</p>
+            <p class="subheading" >N'hésitez pas à mettre régulierement à jour votre compte !</p>
           </div>
         </div>
    </section>
