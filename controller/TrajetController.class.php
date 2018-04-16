@@ -22,7 +22,9 @@ class TrajetController extends Controller {
 	}
 	
 	public function historiqueTrajets($request) {
+		$trajets = Trajet::voirMesTrajets($_SESSION['id']);
 		$view = new TrajetView($this, 'historiqueTrajets');
+		$view -> setArg('mesTrajets', $trajets);
 		$view->render();
 	}
 	
@@ -50,8 +52,7 @@ class TrajetController extends Controller {
 		$dateArriveeHeure = $date . ' ' . $heure_arrivee . ':00';
 		
 		$id_voiture = Trajet::getIdByModele($voiture)[0][0]; //permet de récupérer l'id de la voiture selectionnée
-		$trajets = Trajet::create($nomTrajet, $id_voiture, $lieu_depart, $lieu_arrivee, $dateDepartHeure, $dateDepartHeure, $nbPlaces);
-		print_r($trajets);
+		$trajets = Trajet::create($nomTrajet, $id_voiture, $lieu_depart, $lieu_arrivee, $dateDepartHeure, $dateDepartHeure, $nbPlaces, $_SESSION['id']);
 		$view = new TrajetView($this, 'creerTrajet');
 		$view->render();
 	}

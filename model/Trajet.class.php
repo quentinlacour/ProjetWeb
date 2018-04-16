@@ -4,11 +4,17 @@
 class Trajet extends Model {
 
 
-	public static function create($nomTrajet, $id_voiture, $lieu_depart, $lieu_arrivee, $heure_depart, $heure_arrivee, $nbPlaces){ /* Changer dans la base de donnnées le champ "NULL" pour avoir des champs non obligatoires */
+	public static function create($nomTrajet, $id_voiture, $lieu_depart, $lieu_arrivee, $heure_depart, $heure_arrivee, $nbPlaces, $id_user){ /* Changer dans la base de donnnées le champ "NULL" pour avoir des champs non obligatoires */
 			
 		$cleRequete = 'CreateTrajet';
-		$trajet = Model::executeRequest($cleRequete, array(':nom_trajet' => $nomTrajet, ':id_voiture' => $id_voiture, ':lieu_depart' => $lieu_depart, 
-			':lieu_arrivee' => $lieu_arrivee, ':heure_depart' => $heure_depart, ':heure_arrivee' => $heure_arrivee, ':nombre_places' => $nbPlaces));
+		$trajet = Model::executeRequest($cleRequete, array(':nom_trajet' => $nomTrajet, ':id_voiture' => $id_voiture, ':lieu_depart' => $lieu_depart,		
+			':lieu_arrivee' => $lieu_arrivee, ':heure_depart' => $heure_depart, ':heure_arrivee' => $heure_arrivee, ':nombre_places' => $nbPlaces, ':id_user' => $id_user));
+			
+		$id_trajet = Model::executeRequest('getIdTrajetByOtherParameters', array(':nom_trajet' => $nomTrajet, ':lieu_depart' => $lieu_depart, 
+		':lieu_arrivee' => $lieu_arrivee, ':heure_depart' => $heure_depart));
+		$id_trajet = $id_trajet->fetchAll();
+		
+		Trajet::inscrireUtilisateurATrajet($_SESSION['id'], $id_trajet[0][0]);
 			
 		return $trajet;
 	}
@@ -45,7 +51,19 @@ class Trajet extends Model {
 		$result = $trajet->fetchAll();
 		return $result;
 	}
+	
+	public static function voirMesTrajets($id_user){
+		
+		$cleRequete = "voirMesTrajets";		
+		$trajet = Model::executeRequest($cleRequete, array(':id_user' => $id_user));
+		$result = $trajet->fetchAll();
+		return $result;
+	}
    
 }
+
+
+
+
 
 ?>
