@@ -16,7 +16,6 @@ class AnonymousController extends Controller {
 	public function validateInscription($request) {
 		$login = $request->read('inscLogin');
 		$password = $request->read('inscPassword');
-		$passwordVerif = $request->read('inscPassword2');
 		$nom = $request->read('inputLastname');
 		$prenom = $request->read('inputFirstname');
 		$email = $request->read('inputEmail');
@@ -27,7 +26,7 @@ class AnonymousController extends Controller {
 			$view->setArg('inscErrorText','This login is already used');
 			$view->render();
 		} 
-		if($login == NULL || $nom == NULL || $prenom == NULL ||$password == NULL || $passwordVerif ==NULL){
+		if($login == NULL || $nom == NULL || $prenom == NULL ||$password == NULL){
 			$view = new FormView($this,'inscription');
 			$view->render();
 			echo "<legend align='center' style='Color:Red;'> Il manque des informations importantes </legend>";
@@ -44,9 +43,6 @@ class AnonymousController extends Controller {
 			else {
 				$view = new View($this,'index');
 				$view->render();
-				$newRequest = new Request();
-				$newRequest->write('c','user');
-				Dispatcher::getCurrentDispatcher()->dispatch($newRequest);
 			}
 		}
    

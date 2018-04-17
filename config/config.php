@@ -19,7 +19,7 @@
 // DB
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	define('_MYSQL_HOST','localhost');
-	define('_MYSQL_DBNAME','projetweb');
+	define('_MYSQL_DBNAME','projetweb_ajour');
 	define('_MYSQL_USER','root');
 	define('_MYSQL_PASSWORD','root');
 	
