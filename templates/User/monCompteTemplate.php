@@ -6,9 +6,7 @@
 	$password = $_SESSION["password"];
 	$telephone = $_SESSION["telephone"];
 ?>
- <link href="css/menuAgency.css" rel="stylesheet">
-<link href="css/agency.css" rel="stylesheet">
-	  
+
 <section  id="team">
       <div class="container">
         <div class="row">

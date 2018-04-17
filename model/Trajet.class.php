@@ -59,6 +59,43 @@ class Trajet extends Model {
 		$result = $trajet->fetchAll();
 		return $result;
 	}
+	
+	public static function nbTrajetParJour(){	
+		$cleRequete = "nbTrajetParJour";		
+		$trajet = Model::executeRequest($cleRequete);
+		$result = $trajet->fetchAll();
+		return $result;
+	}
+	public static function nbTrajetParMois(){	
+		$cleRequete = "nbTrajetParMois";		
+		$trajet = Model::executeRequest($cleRequete);
+		$result = $trajet->fetchAll();
+		return $result;
+	}
+	public static function nbTrajetParAnnee(){	
+		$cleRequete = "nbTrajetParAnnee";		
+		$trajet = Model::executeRequest($cleRequete);
+		$result = $trajet->fetchAll();
+		return $result;
+	}
+	public static function distanceParJour(){	
+		$cleRequete = "distanceParJour";		
+		$trajet = Model::executeRequest($cleRequete);
+		// $result = $trajet->fetchAll();
+		return $trajet;
+	}
+	public static function distanceParMois(){	
+		$cleRequete = "distanceParMois";		
+		$trajet = Model::executeRequest($cleRequete);
+		// $result = $trajet->fetchAll();
+		return $trajet;
+	}
+	public static function distanceParAnnee(){	
+		$cleRequete = "distanceParAnnee";		
+		$trajet = Model::executeRequest($cleRequete);
+		// $result = $trajet->fetchAll();
+		return $trajet;
+	}
    
 }
 
