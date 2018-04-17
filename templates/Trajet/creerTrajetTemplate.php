@@ -1,7 +1,7 @@
 <?php
 	$login = $_SESSION["login"];
 	$idUser = $_SESSION["id"];
-	$reponse = Trajet::recupererVoitures('3');
+	$reponse = Trajet::recupererVoitures($idUser);
 ?>
  <link href="css/menuAgency.css" rel="stylesheet">
   <link href="css/agency.css" rel="stylesheet">
