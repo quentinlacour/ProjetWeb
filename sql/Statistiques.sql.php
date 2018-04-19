@@ -10,21 +10,22 @@
 	
 	Trajet::addSqlRequest('top10PersonnesCreatrices', "SELECT COUNT(id_trajet) AS nbDeTrajet, prenom_user, nom_user FROM utilisateur 
 	JOIN trajet ON utilisateur.id_user = trajet.id_user GROUP BY utilisateur.id_user ORDER BY nbDeTrajet DESC LIMIT 10 ;");
-	Trajet::addSqlRequest('top10PersonnesParticipatrices', "SELECT prenom_user, nom_user, nombre_trajets_realises FROM utilisateur 
-	ORDER BY nombre_trajets_realises DESC LIMIT 10 ;");
-	Trajet::addSqlRequest('top10VilleDepart', "SELECT prenom_user, nom_user, nombre_trajets_realises FROM utilisateur 
-	ORDER BY nombre_trajets_realises DESC LIMIT 10 ;");
-	Trajet::addSqlRequest('top10VilleDestination', "SELECT prenom_user, nom_user, nombre_trajets_realises FROM utilisateur 
-	ORDER BY nombre_trajets_realises DESC LIMIT 10 ;");
+	Trajet::addSqlRequest('top10PersonnesParticipatrices', "SELECT COUNT(id_trajet) AS nbDeTrajet, prenom_user, nom_user FROM utilisateur 
+	JOIN participe ON utilisateur.id_user = participe.id_user GROUP BY utilisateur.id_user ORDER BY nbDeTrajet DESC LIMIT 10 ;");
+	
+	Trajet::addSqlRequest('top10VilleDepart', "SELECT COUNT(id_trajet) AS nbDeTrajet, nom_ville FROM trajet 
+	JOIN ville ON trajet.lieu_depart = ville.nom_ville GROUP BY ville.nom_ville ORDER BY nbDeTrajet DESC LIMIT 10 ;");
+	Trajet::addSqlRequest('top10VilleDestination', "SELECT COUNT(id_trajet) AS nbDeTrajet, nom_ville FROM trajet 
+	JOIN ville ON trajet.lieu_arrivee = ville.nom_ville GROUP BY ville.nom_ville ORDER BY nbDeTrajet DESC LIMIT 10 ;");
 	
 	
-	Trajet::addSqlRequest('nombreMoyenPersonneParTrajet', "SELECT prenom_user, nom_user, participe.id_trajet, AVG(nbParticipants) as avgPersonne
+	Trajet::addSqlRequest('nombreMoyenPersonneParTrajet', "SELECT AVG(nbParticipants) as avgPersonne
 			FROM (
 				SELECT COUNT(participe.id_user) as nbParticipants FROM participe GROUP BY participe.id_trajet
 				) as subRequest, utilisateur
 			JOIN participe ON participe.id_user = utilisateur.id_user
 			GROUP BY participe.id_trajet
-			ORDER BY avgPersonne DESC LIMIT 10 ;");
+			ORDER BY avgPersonne DESC LIMIT 1 ;");
 			
 	Trajet::addSqlRequest('nombreMoyenEtapeParTrajet', "SELECT nom_trajet, AVG(nbEtapes) as avgEtapes
 			FROM (
@@ -32,7 +33,7 @@
 				) as subRequest, trajet
 			JOIN traverse ON traverse.id_trajet = trajet.id_trajet
 			GROUP BY trajet.id_trajet
-			ORDER BY avgEtapes DESC LIMIT 10 ;");
+			ORDER BY avgEtapes DESC LIMIT 1 ;");
 	
 	
    
