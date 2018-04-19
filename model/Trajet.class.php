@@ -60,13 +60,13 @@ class Trajet extends Model {
 		return $result;
 	}
    
-}
+
 
 
 
 													/* Fonctions de statistiques */
 
-public static function nbTrajetParJour(){	
+	public static function nbTrajetParJour(){	
 	$cleRequete = "nbTrajetParJour";		
 	$trajet = Model::executeRequest($cleRequete);
 	$result = $trajet->fetchAll();
@@ -141,6 +141,7 @@ public static function nombreMoyenEtapeParTrajet(){
 	$trajet = Model::executeRequest($cleRequete);
 	$result = $trajet->fetchAll();
 	return $result;
+}
 }
 
 ?>

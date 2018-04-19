@@ -13,102 +13,37 @@
 </script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-<style type="text/css">
-.popupStat{
-  position: absolute;
-  left: 30px;
-  top: -30px;
-  z-index: 999;
-  width: 300px;
-  background: #fff;
-  color: #333;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 25px;
-  -moz-box-shadow: 0 0 5px #999;
-  -webkit-box-shadow: 0 0 5px #999;
-  box-shadow: 0 0 5px #999;
-}
-</style>
-	<div class="popupStat" id="trajetJour" name="boutonTrajetParJour"> 
-		<center> Nombre trajets  Jour du mois </center>
-		<?php 
-		$nbTrajets = sizeof($nbTrajetParJour);
-		for ($i=0; $i<$nbTrajets; $i++){ ?>
-			<ul class="list-inline mb-2" style="text-align: center;">
-				<li class="list-inline-item"> 
-					<p class="text" name="nom_trajet" id="nom_trajet"><?php print_r($nbTrajetParJour[$i][0]);?></p>
-				</li>
-				<li class="list-inline-item"> 
-					<p class="text" name="nom_trajet" id="nom_trajet"><?php print_r($nbTrajetParJour[$i][1]);?></p>
-				</li>
-			</ul> 
-		<?php 
-		}?>
-		</ul> 
-		<br />
-		<center><a href="javascript:nbTrajetParJour('hide');">Close</a></center> 
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <style type="text/css">
 #popupbox{
 	    margin: -70px;
     margin-left: 40%;
     padding-top: 11px;
-    rgin-top: 50px;
+    margin-top: -540px;
     padding-top: 16px;
     width: 15%;
     height: 255px;
     position: sticky;
     top: 150px;
     left: 43%;
-    background: #fed136;
+    background: rgb(106, 129, 119);
     z-index: 9;
     font-family: arial;
-    opacity: 0.85;
+    opacity: 0.95;
     visibility: hidden;
-    color: red;
+    color: #fed136;
     border: solid #000000 1px;
+    -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 25px;
+  -moz-box-shadow: 0 0 5px #999;
+  -webkit-box-shadow: 0 0 5px #999;
 }
-</style>
-<div id="popupbox"> 
-	<form name="login" action="index.php?a=validateConnection" method="post">
-		<center>Login</center>
-		<center><input name="login" size="14" /></center>
-		<br />
-		<center>Mot de Passe</center>
-		<center><input name="password" type="password" size="14" /></center>
-    <br />
-		<center><input type="submit" name="submit" value="Login" /></center>
-    <br />
-	</form>
-	<center><a href="javascript:login('hide');">Close</a></center> 
 
-</div> 
+
+
+
+</style>
+ 
 
     <!-- Intro Header -->
     <header class="masthead">
@@ -133,7 +68,20 @@
   </header>
 
 	
+  <div id="popupbox"> 
+	<form name="login" action="index.php?a=validateConnection" method="post">
+		<center>Login</center>
+		<center><input name="login" size="14" /></center>
+		<br />
+		<center>Mot de Passe</center>
+		<center><input name="password" type="password" size="14" /></center>
+    <br />
+		<center><input type="submit" name="submit" value="Login" /></center>
+    <br />
+	</form>
+	<center><a href="javascript:login('hide');">Close</a></center> 
 
+</div>
   
 
     <!-- Map Section -->

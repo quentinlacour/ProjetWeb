@@ -77,25 +77,25 @@
 
 <style type="text/css">
 .popupStat{
-	margin: -70px;
-    margin-left: 40%;
-    padding-top: 11px;
-    rgin-top: 50px;
-    padding-top: 16px;
-    width: 15%;
-    height: 255px;
-    position: sticky;
-    top: 150px;
-    left: 43%;
-    background: #fed136;
-    z-index: 9;
-    font-family: arial;
-    opacity: 0.85;
-    visibility: hidden;
-    color: red;
-    border: solid #000000 1px;
+  margin: auto;
+  margin-top: 200px;
+  z-index: 999;
+  width: 300px;
+  background: #fed136;
+  color: #333;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 25px;
+  -moz-box-shadow: 0 0 5px #999;
+  -webkit-box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 5px #999;
+  opacity: 0.85;
+  display: block;
+  visibility: hidden;
+
 }
 </style>
+
 
 
 <section class="content-section" id="portfolio">	  
