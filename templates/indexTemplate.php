@@ -12,6 +12,68 @@
 	javascript:login('hide');
 </script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+.popupStat{
+  position: absolute;
+  left: 30px;
+  top: -30px;
+  z-index: 999;
+  width: 300px;
+  background: #fff;
+  color: #333;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 25px;
+  -moz-box-shadow: 0 0 5px #999;
+  -webkit-box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 5px #999;
+}
+</style>
+	<div class="popupStat" id="trajetJour" name="boutonTrajetParJour"> 
+		<center> Nombre trajets  Jour du mois </center>
+		<?php 
+		$nbTrajets = sizeof($nbTrajetParJour);
+		for ($i=0; $i<$nbTrajets; $i++){ ?>
+			<ul class="list-inline mb-2" style="text-align: center;">
+				<li class="list-inline-item"> 
+					<p class="text" name="nom_trajet" id="nom_trajet"><?php print_r($nbTrajetParJour[$i][0]);?></p>
+				</li>
+				<li class="list-inline-item"> 
+					<p class="text" name="nom_trajet" id="nom_trajet"><?php print_r($nbTrajetParJour[$i][1]);?></p>
+				</li>
+			</ul> 
+		<?php 
+		}?>
+		</ul> 
+		<br />
+		<center><a href="javascript:nbTrajetParJour('hide');">Close</a></center> 
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <style type="text/css">
 #popupbox{
 	    margin: -70px;
