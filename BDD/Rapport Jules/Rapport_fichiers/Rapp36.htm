@@ -1,0 +1,1830 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Rapport
+</title>
+<link href="Theme_BleuClair.css" type="text/css" rel="stylesheet">
+</head>
+<!--Ce fichier a été généré automatiquement par PowerAMC.-->
+<body>
+<h2>
+<a name="143">Table participe</a> 
+</h2>
+<h3>
+<a name="144">Fiche de la table participe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#143">participe</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#143">participe</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">SGBD
+</p>
+</td>
+<td width="75%">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="145">Nom de contrainte de paramètre de contrôle de la table participe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">TK_participe
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="146">Règle de validation serveur de la table participe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="147">Aperçu du code de la table participe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">drop table if exists participe;<br />
+<br />
+/*==============================================================*/<br />
+/* Table : participe                                            */<br />
+/*==============================================================*/<br />
+create table participe<br />
+(<br />
+   id_user              int not null,<br />
+   id_trajet            int not null,<br />
+   primary key (id_user, id_trajet)<br />
+);<br />
+<br />
+alter table participe add constraint FK_participe foreign key (id_user)<br />
+      references utilisateur (id_user) on delete restrict on update restrict;<br />
+<br />
+alter table participe add constraint FK_participe2 foreign key (id_trajet)<br />
+      references trajet (id_trajet) on delete restrict on update restrict;<br />
+
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="148">Liste des diagrammes contenant la table participe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp3.htm#3">Diagramme_1</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp3.htm#3">diagramme_1</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="149">Liste des références sortantes de la table participe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Colonnes de clé étrangère
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp19.htm#40">participe</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp19.htm#40">participe2</a>
+</p>
+</td>
+<td>
+<p align="left">identifiant trajet
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp18.htm#34">participe</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp18.htm#34">participe</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left">identifiant utilisateur
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="150">Liste de tous les objets dépendant de la table participe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de classe
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp19.htm#40">participe</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp19.htm#40">participe2</a>
+</p>
+</td>
+<td>
+<p align="left">Référence
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp18.htm#34">participe</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp18.htm#34">participe</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left">Référence
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="151">Liste des attributs étendus de la table participe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Temporary
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="152">Liste des colonnes de la table participe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp36.htm#153">identifiant utilisateur</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp36.htm#153">id_user</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp36.htm#160">identifiant trajet</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp36.htm#160">id_trajet</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="153">Colonne identifiant utilisateur de la table participe</a> 
+</h2>
+<h3>
+<a name="154">Fiche de la colonne identifiant utilisateur de la table participe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#153">identifiant utilisateur</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#153">id_user</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Type de données
+</p>
+</td>
+<td width="75%">
+<p align="left">int
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Obligatoire
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="155">Nom de contrainte de paramètre de contrôle de la colonne identifiant utilisateur de la table participe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CK_id_user
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="156">Contrôle de la colonne identifiant utilisateur de la table participe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur minimale
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur maximale
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur par défaut
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unité
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Majuscules
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minuscules
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Non modifiable
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Liste de valeurs
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="157">Règle de validation serveur de la colonne identifiant utilisateur de la table participe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %UPPER% and %LOWER% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="158">Liste de tous les objets dépendant de la colonne de table identifiant utilisateur</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de classe
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">identifiant utilisateur
+</p>
+</td>
+<td>
+<p align="left">id_user
+</p>
+</td>
+<td>
+<p align="left">Colonne d'index
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">identifiant utilisateur
+</p>
+</td>
+<td class="TD2">
+<p align="left">id_user
+</p>
+</td>
+<td class="TD2">
+<p align="left">Colonne d'index
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">&lt;Inconnu&gt;
+</p>
+</td>
+<td>
+<p align="left">&lt;Inconnu&gt;
+</p>
+</td>
+<td>
+<p align="left">Jointure de référence
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp36.htm#168">Identifiant_1</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp36.htm#168">identifiant_1</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left">Clé
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="159">Liste des attributs étendus de la colonne de table identifiant utilisateur</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">CharSet
+</p>
+</td>
+<td>
+<p align="left">CharSets
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Collate
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Chaîne)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">National
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Unsigned
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Booléen)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ZeroFill
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="160">Colonne identifiant trajet de la table participe</a> 
+</h2>
+<h3>
+<a name="161">Fiche de la colonne identifiant trajet de la table participe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#160">identifiant trajet</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#160">id_trajet</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Type de données
+</p>
+</td>
+<td width="75%">
+<p align="left">int
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Obligatoire
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="162">Nom de contrainte de paramètre de contrôle de la colonne identifiant trajet de la table participe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CK_id_trajet
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="163">Contrôle de la colonne identifiant trajet de la table participe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur minimale
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur maximale
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur par défaut
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unité
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Majuscules
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minuscules
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Non modifiable
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Liste de valeurs
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="164">Règle de validation serveur de la colonne identifiant trajet de la table participe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %UPPER% and %LOWER% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="165">Liste de tous les objets dépendant de la colonne de table identifiant trajet</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de classe
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">identifiant trajet
+</p>
+</td>
+<td>
+<p align="left">id_trajet
+</p>
+</td>
+<td>
+<p align="left">Colonne d'index
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">identifiant trajet
+</p>
+</td>
+<td class="TD2">
+<p align="left">id_trajet
+</p>
+</td>
+<td class="TD2">
+<p align="left">Colonne d'index
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">&lt;Inconnu&gt;
+</p>
+</td>
+<td>
+<p align="left">&lt;Inconnu&gt;
+</p>
+</td>
+<td>
+<p align="left">Jointure de référence
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp36.htm#168">Identifiant_1</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp36.htm#168">identifiant_1</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left">Clé
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="166">Liste des attributs étendus de la colonne de table identifiant trajet</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">CharSet
+</p>
+</td>
+<td>
+<p align="left">CharSets
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Collate
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Chaîne)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">National
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Unsigned
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Booléen)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ZeroFill
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="167">Liste des clés de la table participe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Primaire
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp36.htm#168">Identifiant_1</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp36.htm#168">identifiant_1</a>
+</p>
+</td>
+<td>
+<p align="left">X
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="168">Clé Identifiant_1 de la table participe</a> 
+</h2>
+<h3>
+<a name="169">Fiche de la clé Identifiant_1 de la table participe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#168">Identifiant_1</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#168">identifiant_1</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Table
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#143">participe</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="170">Aperçu du code de la clé Identifiant_1 de la table participe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">alter table participe<br />
+   drop primary key;<br />
+
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="171">Liste des colonnes de la clé de table Identifiant_1</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp36.htm#153">identifiant utilisateur</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp36.htm#153">id_user</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp36.htm#160">identifiant trajet</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp36.htm#160">id_trajet</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="172">Liste de tous les objets dépendant de la clé de table Identifiant_1</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de classe
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp36.htm#175">PARTICIPE_PK</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp36.htm#175">PARTICIPE_PK</a>
+</p>
+</td>
+<td>
+<p align="left">Index
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="173">Liste des attributs étendus de la clé de table Identifiant_1</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtUnique
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="174">Liste des index de la table participe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Unique
+</p>
+</td>
+<td class="Header">
+<p align="center">Cluster
+</p>
+</td>
+<td class="Header">
+<p align="center">Primaire
+</p>
+</td>
+<td class="Header">
+<p align="center">Clé étrangère
+</p>
+</td>
+<td class="Header">
+<p align="center">Clé alternative
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp36.htm#175">PARTICIPE_PK</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp36.htm#175">PARTICIPE_PK</a>
+</p>
+</td>
+<td>
+<p align="left">X
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">X
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp36.htm#180">PARTICIPE_FK</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp36.htm#180">PARTICIPE_FK</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">X
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp36.htm#185">PARTICIPE2_FK</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp36.htm#185">PARTICIPE2_FK</a>
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">X
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="175">Index PARTICIPE_PK de la table participe</a> 
+</h2>
+<h3>
+<a name="176">Fiche de l'index PARTICIPE_PK de la table participe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#175">PARTICIPE_PK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#175">PARTICIPE_PK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unique
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cluster
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Primaire
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Clé étrangère
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Clé alternative
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Table
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#143">participe</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="177">Aperçu du code de l'index PARTICIPE_PK de la table participe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left"># L'aperçu est vide en raison des paramètres définis.<br />
+# Vérifiez les options de génération.
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="178">Liste des colonnes d'index de l'index PARTICIPE_PK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Tri
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">identifiant utilisateur
+</p>
+</td>
+<td>
+<p align="left">id_user
+</p>
+</td>
+<td>
+<p align="left">Ascendant
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">identifiant trajet
+</p>
+</td>
+<td class="TD2">
+<p align="left">id_trajet
+</p>
+</td>
+<td class="TD2">
+<p align="left">Ascendant
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="179">Liste des attributs étendus de l'index de table PARTICIPE_PK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">FullText
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="180">Index PARTICIPE_FK de la table participe</a> 
+</h2>
+<h3>
+<a name="181">Fiche de l'index PARTICIPE_FK de la table participe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#180">PARTICIPE_FK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#180">PARTICIPE_FK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unique
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cluster
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Primaire
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Clé étrangère
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Clé alternative
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Table
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#143">participe</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="182">Aperçu du code de l'index PARTICIPE_FK de la table participe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left"># L'aperçu est vide en raison des paramètres définis.<br />
+# Vérifiez les options de génération.
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="183">Liste des colonnes d'index de l'index PARTICIPE_FK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Tri
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">identifiant utilisateur
+</p>
+</td>
+<td>
+<p align="left">id_user
+</p>
+</td>
+<td>
+<p align="left">Ascendant
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="184">Liste des attributs étendus de l'index de table PARTICIPE_FK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">FullText
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="185">Index PARTICIPE2_FK de la table participe</a> 
+</h2>
+<h3>
+<a name="186">Fiche de l'index PARTICIPE2_FK de la table participe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#185">PARTICIPE2_FK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#185">PARTICIPE2_FK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unique
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cluster
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Primaire
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Clé étrangère
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Clé alternative
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Table
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp36.htm#143">participe</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="187">Aperçu du code de l'index PARTICIPE2_FK de la table participe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left"># L'aperçu est vide en raison des paramètres définis.<br />
+# Vérifiez les options de génération.
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="188">Liste des colonnes d'index de l'index PARTICIPE2_FK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Tri
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">identifiant trajet
+</p>
+</td>
+<td>
+<p align="left">id_trajet
+</p>
+</td>
+<td>
+<p align="left">Ascendant
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="189">Liste des attributs étendus de l'index de table PARTICIPE2_FK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">FullText
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<hr />
+<table><tr>
+<td><table class="NavGroup"><tr><td><a class="NavButton" href="Rapp35.htm">Précédent</a></td></tr></table></td>
+<td width=4></td>
+<td><table class="NavGroup"><tr><td><a class="NavButton" href="Accueil_BleuClair.html">Accueil</a></td></tr></table></td>
+<td width=4></td>
+<td><table class="NavGroup"><tr><td><a class="NavButton" href="Rapp37.htm">Suivant</a></td></tr></table></td></tr></table>
+<br />
+<br />
+</body>
+</html>

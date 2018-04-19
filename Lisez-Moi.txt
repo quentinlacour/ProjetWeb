@@ -1,0 +1,32 @@
+######################## Infos Utiles ######################## 
+ID EDEN : 
+jules.claussen
+RhKHudMI
+
+La doc .html est située dans ProjetWeb/BDD/Rapport Jules
+
+
+######################## Navigation sur le site ######################## 
+
+1. Creer une nouvelle base de données sur MySql avec le fichier "BDD_Creation.sql" situé dans le dossier BDD. 
+Aller dans le dossier config et y modifier la ligne 22 pour avoir le nom de la base de données correspondant à celle créee. 
+
+2. Créez un nouvel utilisateur sur le site, puis connectez vous pour avoir accès à plus de fonctionnalités. Laissez vous guider par le site...
+
+3. Si vous souhaitez utiliser un jeu de données, importez dans SQL le fichier "testData.sql". Connectez vous avec les identifiants login:"Lavinia" et mot de passe "quam" par exemple
+Vous pouvez choisir un autre utilisateur dans la base de données pour avoir des résultats différents sur certaines pages.
+Il est maintenant possible d'afficher des trajets (ceux présents dans la table trajet évidemment. Par exemple : )
+Vous pouvez consulter votre compte et y voir vos voitures, modifier quelques paramètres etc...
+Il est aussi possible de consulter la page de statistique du site où y apparaitra les données que vous souhaitez (top 10 créateurs de trajets, nombre de passager moyens etc...)
+
+
+
+######################## Installation en local ######################## 
+
+
+Pour "installer" le site sur son poste, il suffit de télécharger le dossier complet sur github (https://github.com/quentinlacour/ProjetWeb).
+Il faut ensuite modifier le fichier config (dans le dossier config) et mettre en commentaire les lignes 27 à 38 ainsi que décommenter les lignes 21 à 24. Ces lignes
+devront être adaptés en fonction de votre configuration MySQL
+Se référer ensuite au point 3 ci-dessus pour créer la base de données avec le fichier "BDD_Creation.sql" situé dans le dossier BDD. 
+
+

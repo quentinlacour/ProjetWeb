@@ -1,0 +1,1622 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Rapport
+</title>
+<link href="Theme_BleuClair.css" type="text/css" rel="stylesheet">
+</head>
+<!--Ce fichier a été généré automatiquement par PowerAMC.-->
+<body>
+<h2>
+<a name="101">Table Groupe</a> 
+</h2>
+<h3>
+<a name="102">Fiche de la table Groupe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp35.htm#101">Groupe</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp35.htm#101">groupe</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">SGBD
+</p>
+</td>
+<td width="75%">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="103">Nom de contrainte de paramètre de contrôle de la table Groupe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">TK_groupe
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="104">Règle de validation serveur de la table Groupe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="105">Aperçu du code de la table Groupe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">drop table if exists groupe;<br />
+<br />
+/*==============================================================*/<br />
+/* Table : groupe                                               */<br />
+/*==============================================================*/<br />
+create table groupe<br />
+(<br />
+   id_groupe            int not null auto_increment,<br />
+   nombre_personnes     int,<br />
+   nom                  varchar(20) not null,<br />
+   primary key (id_groupe)<br />
+);<br />
+
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="106">Liste des diagrammes contenant la table Groupe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp3.htm#3">Diagramme_1</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp3.htm#3">diagramme_1</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="107">Liste des références entrantes de la table Groupe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp13.htm#4">appartient</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp13.htm#4">appartient</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp24.htm#70">realise</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp24.htm#70">realise</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="108">Liste de tous les objets dépendant de la table Groupe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de classe
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp13.htm#4">appartient</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp13.htm#4">appartient</a>
+</p>
+</td>
+<td>
+<p align="left">Référence
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp24.htm#70">realise</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp24.htm#70">realise</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left">Référence
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="109">Liste des attributs étendus de la table Groupe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Temporary
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="110">Liste des colonnes de la table Groupe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp35.htm#111">identifiant groupe</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp35.htm#111">id_groupe</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp35.htm#118">nombre personnes</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp35.htm#118">nombre_personnes</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp35.htm#124">nom</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp35.htm#124">nom</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="111">Colonne identifiant groupe de la table Groupe</a> 
+</h2>
+<h3>
+<a name="112">Fiche de la colonne identifiant groupe de la table Groupe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp35.htm#111">identifiant groupe</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp35.htm#111">id_groupe</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Type de données
+</p>
+</td>
+<td width="75%">
+<p align="left">int
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Obligatoire
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="113">Nom de contrainte de paramètre de contrôle de la colonne identifiant groupe de la table Groupe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CK_id_groupe
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="114">Contrôle de la colonne identifiant groupe de la table Groupe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur minimale
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur maximale
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur par défaut
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unité
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Majuscules
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minuscules
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Non modifiable
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Liste de valeurs
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="115">Règle de validation serveur de la colonne identifiant groupe de la table Groupe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %UPPER% and %LOWER% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="116">Liste de tous les objets dépendant de la colonne de table identifiant groupe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de classe
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">identifiant groupe
+</p>
+</td>
+<td>
+<p align="left">id_groupe
+</p>
+</td>
+<td>
+<p align="left">Colonne d'index
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">&lt;Inconnu&gt;
+</p>
+</td>
+<td class="TD2">
+<p align="left">&lt;Inconnu&gt;
+</p>
+</td>
+<td class="TD2">
+<p align="left">Jointure de référence
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">&lt;Inconnu&gt;
+</p>
+</td>
+<td>
+<p align="left">&lt;Inconnu&gt;
+</p>
+</td>
+<td>
+<p align="left">Jointure de référence
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp35.htm#131">Identifiant_1</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp35.htm#131">identifiant_1</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left">Clé
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="117">Liste des attributs étendus de la colonne de table identifiant groupe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">CharSet
+</p>
+</td>
+<td>
+<p align="left">CharSets
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Collate
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Chaîne)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">National
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Unsigned
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Booléen)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ZeroFill
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="118">Colonne nombre personnes de la table Groupe</a> 
+</h2>
+<h3>
+<a name="119">Fiche de la colonne nombre personnes de la table Groupe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp35.htm#118">nombre personnes</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp35.htm#118">nombre_personnes</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Type de données
+</p>
+</td>
+<td width="75%">
+<p align="left">int
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Obligatoire
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="120">Nom de contrainte de paramètre de contrôle de la colonne nombre personnes de la table Groupe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CK_nombre_personnes
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="121">Contrôle de la colonne nombre personnes de la table Groupe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur minimale
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur maximale
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur par défaut
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unité
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Majuscules
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minuscules
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Non modifiable
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Liste de valeurs
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="122">Règle de validation serveur de la colonne nombre personnes de la table Groupe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %UPPER% and %LOWER% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="123">Liste des attributs étendus de la colonne de table nombre personnes</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">CharSet
+</p>
+</td>
+<td>
+<p align="left">CharSets
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Collate
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Chaîne)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">National
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Unsigned
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Booléen)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ZeroFill
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="124">Colonne nom de la table Groupe</a> 
+</h2>
+<h3>
+<a name="125">Fiche de la colonne nom de la table Groupe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp35.htm#124">nom</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp35.htm#124">nom</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Type de données
+</p>
+</td>
+<td width="75%">
+<p align="left">varchar(20)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Obligatoire
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="126">Nom de contrainte de paramètre de contrôle de la colonne nom de la table Groupe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CK_nom
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="127">Contrôle de la colonne nom de la table Groupe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur minimale
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur maximale
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur par défaut
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unité
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Majuscules
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minuscules
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Non modifiable
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Liste de valeurs
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="128">Règle de validation serveur de la colonne nom de la table Groupe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %UPPER% and %LOWER% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="129">Liste des attributs étendus de la colonne de table nom</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">CharSet
+</p>
+</td>
+<td>
+<p align="left">CharSets
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Collate
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Chaîne)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">National
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Unsigned
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Booléen)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ZeroFill
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="130">Liste des clés de la table Groupe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Primaire
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp35.htm#131">Identifiant_1</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp35.htm#131">identifiant_1</a>
+</p>
+</td>
+<td>
+<p align="left">X
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="131">Clé Identifiant_1 de la table Groupe</a> 
+</h2>
+<h3>
+<a name="132">Fiche de la clé Identifiant_1 de la table Groupe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp35.htm#131">Identifiant_1</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp35.htm#131">identifiant_1</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Table
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp35.htm#101">Groupe</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="133">Aperçu du code de la clé Identifiant_1 de la table Groupe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">alter table groupe<br />
+   drop primary key;<br />
+
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="134">Liste des colonnes de la clé de table Identifiant_1</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp35.htm#111">identifiant groupe</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp35.htm#111">id_groupe</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="135">Liste de tous les objets dépendant de la clé de table Identifiant_1</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de classe
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp13.htm#4">appartient</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp13.htm#4">appartient</a>
+</p>
+</td>
+<td>
+<p align="left">Référence
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp35.htm#138">GROUPE_PK</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp35.htm#138">GROUPE_PK</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left">Index
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp24.htm#70">realise</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp24.htm#70">realise</a>
+</p>
+</td>
+<td>
+<p align="left">Référence
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="136">Liste des attributs étendus de la clé de table Identifiant_1</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtUnique
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="137">Liste des index de la table Groupe</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Unique
+</p>
+</td>
+<td class="Header">
+<p align="center">Cluster
+</p>
+</td>
+<td class="Header">
+<p align="center">Primaire
+</p>
+</td>
+<td class="Header">
+<p align="center">Clé étrangère
+</p>
+</td>
+<td class="Header">
+<p align="center">Clé alternative
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp35.htm#138">GROUPE_PK</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp35.htm#138">GROUPE_PK</a>
+</p>
+</td>
+<td>
+<p align="left">X
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">X
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="138">Index GROUPE_PK de la table Groupe</a> 
+</h2>
+<h3>
+<a name="139">Fiche de l'index GROUPE_PK de la table Groupe</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp35.htm#138">GROUPE_PK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp35.htm#138">GROUPE_PK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unique
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cluster
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Primaire
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Clé étrangère
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Clé alternative
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Table
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp35.htm#101">Groupe</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="140">Aperçu du code de l'index GROUPE_PK de la table Groupe</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left"># L'aperçu est vide en raison des paramètres définis.<br />
+# Vérifiez les options de génération.
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="141">Liste des colonnes d'index de l'index GROUPE_PK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Tri
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">identifiant groupe
+</p>
+</td>
+<td>
+<p align="left">id_groupe
+</p>
+</td>
+<td>
+<p align="left">Ascendant
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="142">Liste des attributs étendus de l'index de table GROUPE_PK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">FullText
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<hr />
+<table><tr>
+<td><table class="NavGroup"><tr><td><a class="NavButton" href="Rapp34.htm">Précédent</a></td></tr></table></td>
+<td width=4></td>
+<td><table class="NavGroup"><tr><td><a class="NavButton" href="Accueil_BleuClair.html">Accueil</a></td></tr></table></td>
+<td width=4></td>
+<td><table class="NavGroup"><tr><td><a class="NavButton" href="Rapp36.htm">Suivant</a></td></tr></table></td></tr></table>
+<br />
+<br />
+</body>
+</html>

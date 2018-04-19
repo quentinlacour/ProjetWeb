@@ -1,0 +1,1830 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Rapport
+</title>
+<link href="Theme_BleuClair.css" type="text/css" rel="stylesheet">
+</head>
+<!--Ce fichier a été généré automatiquement par PowerAMC.-->
+<body>
+<h2>
+<a name="190">Table propose</a> 
+</h2>
+<h3>
+<a name="191">Fiche de la table propose</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#190">propose</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#190">propose</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">SGBD
+</p>
+</td>
+<td width="75%">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="192">Nom de contrainte de paramètre de contrôle de la table propose</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">TK_propose
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="193">Règle de validation serveur de la table propose</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="194">Aperçu du code de la table propose</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">drop table if exists propose;<br />
+<br />
+/*==============================================================*/<br />
+/* Table : propose                                              */<br />
+/*==============================================================*/<br />
+create table propose<br />
+(<br />
+   id_user              int not null,<br />
+   id_trajet            int not null,<br />
+   primary key (id_user, id_trajet)<br />
+);<br />
+<br />
+alter table propose add constraint FK_propose foreign key (id_user)<br />
+      references utilisateur (id_user) on delete restrict on update restrict;<br />
+<br />
+alter table propose add constraint FK_propose2 foreign key (id_trajet)<br />
+      references trajet (id_trajet) on delete restrict on update restrict;<br />
+
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="195">Liste des diagrammes contenant la table propose</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp3.htm#3">Diagramme_1</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp3.htm#3">diagramme_1</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="196">Liste des références sortantes de la table propose</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Colonnes de clé étrangère
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp22.htm#58">propose</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp22.htm#58">propose2</a>
+</p>
+</td>
+<td>
+<p align="left">identifiant trajet
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp21.htm#52">propose</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp21.htm#52">propose</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left">identifiant utilisateur
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="197">Liste de tous les objets dépendant de la table propose</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de classe
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp22.htm#58">propose</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp22.htm#58">propose2</a>
+</p>
+</td>
+<td>
+<p align="left">Référence
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp21.htm#52">propose</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp21.htm#52">propose</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left">Référence
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="198">Liste des attributs étendus de la table propose</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Temporary
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="199">Liste des colonnes de la table propose</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp37.htm#200">identifiant utilisateur</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp37.htm#200">id_user</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp37.htm#207">identifiant trajet</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp37.htm#207">id_trajet</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="200">Colonne identifiant utilisateur de la table propose</a> 
+</h2>
+<h3>
+<a name="201">Fiche de la colonne identifiant utilisateur de la table propose</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#200">identifiant utilisateur</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#200">id_user</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Type de données
+</p>
+</td>
+<td width="75%">
+<p align="left">int
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Obligatoire
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="202">Nom de contrainte de paramètre de contrôle de la colonne identifiant utilisateur de la table propose</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CK_id_user
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="203">Contrôle de la colonne identifiant utilisateur de la table propose</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur minimale
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur maximale
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur par défaut
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unité
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Majuscules
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minuscules
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Non modifiable
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Liste de valeurs
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="204">Règle de validation serveur de la colonne identifiant utilisateur de la table propose</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %UPPER% and %LOWER% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="205">Liste de tous les objets dépendant de la colonne de table identifiant utilisateur</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de classe
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">identifiant utilisateur
+</p>
+</td>
+<td>
+<p align="left">id_user
+</p>
+</td>
+<td>
+<p align="left">Colonne d'index
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">identifiant utilisateur
+</p>
+</td>
+<td class="TD2">
+<p align="left">id_user
+</p>
+</td>
+<td class="TD2">
+<p align="left">Colonne d'index
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">&lt;Inconnu&gt;
+</p>
+</td>
+<td>
+<p align="left">&lt;Inconnu&gt;
+</p>
+</td>
+<td>
+<p align="left">Jointure de référence
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp37.htm#215">Identifiant_1</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp37.htm#215">identifiant_1</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left">Clé
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="206">Liste des attributs étendus de la colonne de table identifiant utilisateur</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">CharSet
+</p>
+</td>
+<td>
+<p align="left">CharSets
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Collate
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Chaîne)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">National
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Unsigned
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Booléen)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ZeroFill
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="207">Colonne identifiant trajet de la table propose</a> 
+</h2>
+<h3>
+<a name="208">Fiche de la colonne identifiant trajet de la table propose</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#207">identifiant trajet</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#207">id_trajet</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Type de données
+</p>
+</td>
+<td width="75%">
+<p align="left">int
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Obligatoire
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="209">Nom de contrainte de paramètre de contrôle de la colonne identifiant trajet de la table propose</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CK_id_trajet
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="210">Contrôle de la colonne identifiant trajet de la table propose</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur minimale
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur maximale
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Valeur par défaut
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unité
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Majuscules
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minuscules
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Non modifiable
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Liste de valeurs
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="211">Règle de validation serveur de la colonne identifiant trajet de la table propose</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %UPPER% and %LOWER% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="212">Liste de tous les objets dépendant de la colonne de table identifiant trajet</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de classe
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">identifiant trajet
+</p>
+</td>
+<td>
+<p align="left">id_trajet
+</p>
+</td>
+<td>
+<p align="left">Colonne d'index
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">identifiant trajet
+</p>
+</td>
+<td class="TD2">
+<p align="left">id_trajet
+</p>
+</td>
+<td class="TD2">
+<p align="left">Colonne d'index
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">&lt;Inconnu&gt;
+</p>
+</td>
+<td>
+<p align="left">&lt;Inconnu&gt;
+</p>
+</td>
+<td>
+<p align="left">Jointure de référence
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp37.htm#215">Identifiant_1</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp37.htm#215">identifiant_1</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left">Clé
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="213">Liste des attributs étendus de la colonne de table identifiant trajet</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">CharSet
+</p>
+</td>
+<td>
+<p align="left">CharSets
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Collate
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Chaîne)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">National
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Unsigned
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Booléen)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ZeroFill
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="214">Liste des clés de la table propose</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Primaire
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp37.htm#215">Identifiant_1</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp37.htm#215">identifiant_1</a>
+</p>
+</td>
+<td>
+<p align="left">X
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="215">Clé Identifiant_1 de la table propose</a> 
+</h2>
+<h3>
+<a name="216">Fiche de la clé Identifiant_1 de la table propose</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#215">Identifiant_1</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#215">identifiant_1</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Table
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#190">propose</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="217">Aperçu du code de la clé Identifiant_1 de la table propose</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">alter table propose<br />
+   drop primary key;<br />
+
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="218">Liste des colonnes de la clé de table Identifiant_1</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp37.htm#200">identifiant utilisateur</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp37.htm#200">id_user</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp37.htm#207">identifiant trajet</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp37.htm#207">id_trajet</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="219">Liste de tous les objets dépendant de la clé de table Identifiant_1</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de classe
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp37.htm#222">PROPOSE_PK</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp37.htm#222">PROPOSE_PK</a>
+</p>
+</td>
+<td>
+<p align="left">Index
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="220">Liste des attributs étendus de la clé de table Identifiant_1</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtUnique
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="221">Liste des index de la table propose</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Unique
+</p>
+</td>
+<td class="Header">
+<p align="center">Cluster
+</p>
+</td>
+<td class="Header">
+<p align="center">Primaire
+</p>
+</td>
+<td class="Header">
+<p align="center">Clé étrangère
+</p>
+</td>
+<td class="Header">
+<p align="center">Clé alternative
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp37.htm#222">PROPOSE_PK</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp37.htm#222">PROPOSE_PK</a>
+</p>
+</td>
+<td>
+<p align="left">X
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">X
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Rapp37.htm#227">PROPOSE_FK</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Rapp37.htm#227">PROPOSE_FK</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">X
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Rapp37.htm#232">PROPOSE2_FK</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Rapp37.htm#232">PROPOSE2_FK</a>
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">X
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="222">Index PROPOSE_PK de la table propose</a> 
+</h2>
+<h3>
+<a name="223">Fiche de l'index PROPOSE_PK de la table propose</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#222">PROPOSE_PK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#222">PROPOSE_PK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unique
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cluster
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Primaire
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Clé étrangère
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Clé alternative
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Table
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#190">propose</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="224">Aperçu du code de l'index PROPOSE_PK de la table propose</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left"># L'aperçu est vide en raison des paramètres définis.<br />
+# Vérifiez les options de génération.
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="225">Liste des colonnes d'index de l'index PROPOSE_PK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Tri
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">identifiant utilisateur
+</p>
+</td>
+<td>
+<p align="left">id_user
+</p>
+</td>
+<td>
+<p align="left">Ascendant
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">identifiant trajet
+</p>
+</td>
+<td class="TD2">
+<p align="left">id_trajet
+</p>
+</td>
+<td class="TD2">
+<p align="left">Ascendant
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="226">Liste des attributs étendus de l'index de table PROPOSE_PK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">FullText
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="227">Index PROPOSE_FK de la table propose</a> 
+</h2>
+<h3>
+<a name="228">Fiche de l'index PROPOSE_FK de la table propose</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#227">PROPOSE_FK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#227">PROPOSE_FK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unique
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cluster
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Primaire
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Clé étrangère
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Clé alternative
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Table
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#190">propose</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="229">Aperçu du code de l'index PROPOSE_FK de la table propose</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left"># L'aperçu est vide en raison des paramètres définis.<br />
+# Vérifiez les options de génération.
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="230">Liste des colonnes d'index de l'index PROPOSE_FK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Tri
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">identifiant utilisateur
+</p>
+</td>
+<td>
+<p align="left">id_user
+</p>
+</td>
+<td>
+<p align="left">Ascendant
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="231">Liste des attributs étendus de l'index de table PROPOSE_FK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">FullText
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="232">Index PROPOSE2_FK de la table propose</a> 
+</h2>
+<h3>
+<a name="233">Fiche de l'index PROPOSE2_FK de la table propose</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Nom
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#232">PROPOSE2_FK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#232">PROPOSE2_FK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unique
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cluster
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Primaire
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Clé étrangère
+</p>
+</td>
+<td width="75%">
+<p align="left">Oui
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Clé alternative
+</p>
+</td>
+<td width="75%">
+<p align="left">Non
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Table
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Rapp37.htm#190">propose</a>
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="234">Aperçu du code de l'index PROPOSE2_FK de la table propose</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left"># L'aperçu est vide en raison des paramètres définis.<br />
+# Vérifiez les options de génération.
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="235">Liste des colonnes d'index de l'index PROPOSE2_FK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Code
+</p>
+</td>
+<td class="Header">
+<p align="center">Tri
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">identifiant trajet
+</p>
+</td>
+<td>
+<p align="left">id_trajet
+</p>
+</td>
+<td>
+<p align="left">Ascendant
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="236">Liste des attributs étendus de l'index de table PROPOSE2_FK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Nom
+</p>
+</td>
+<td class="Header">
+<p align="center">Type de données
+</p>
+</td>
+<td class="Header">
+<p align="center">Valeur
+</p>
+</td>
+<td class="Header">
+<p align="center">Nom de la cible
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">FullText
+</p>
+</td>
+<td>
+<p align="left">(Booléen)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">MySQL 5.0
+</p>
+</td>
+</tr>
+</table><br />
+<hr />
+<table><tr>
+<td><table class="NavGroup"><tr><td><a class="NavButton" href="Rapp36.htm">Précédent</a></td></tr></table></td>
+<td width=4></td>
+<td><table class="NavGroup"><tr><td><a class="NavButton" href="Accueil_BleuClair.html">Accueil</a></td></tr></table></td>
+<td width=4></td>
+<td><table class="NavGroup"><tr><td><a class="NavButton" href="Rapp38.htm">Suivant</a></td></tr></table></td></tr></table>
+<br />
+<br />
+</body>
+</html>
