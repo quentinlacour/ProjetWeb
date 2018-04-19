@@ -20,6 +20,13 @@
 	
 	Trajet::addSqlRequest('voirMesTrajets', "SELECT trajet.id_trajet, nom_trajet, lieu_depart, lieu_arrivee, nombre_places, heure_depart FROM trajet 
 	JOIN participe ON participe.id_trajet = trajet.id_trajet WHERE trajet.id_user = :id_user");
+<<<<<<< HEAD
+=======
+	
+	
+   
+   
+>>>>>>> 4ebe837e4a8ce29c5535222f82a2250ad0ac7f41
    
 
 
