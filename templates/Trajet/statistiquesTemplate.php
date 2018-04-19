@@ -144,7 +144,7 @@
 		}?>
 		</ul> 
 		<br />
-		<center><a href="javascript:nbTrajetParJour('hide');">Close</a></center> 
+		<center><b href="javascript:nbTrajetParJour('hide');">Close</b></center> 
 	</div>
 							<!-- Trajets par mois --> 
 	<div class="popupStat" id="trajetMois" name="boutonTrajetParMois"> 
@@ -164,7 +164,7 @@
 		}?>
 		</ul> 
 		<br />
-		<center><a href="javascript:nbTrajetParMois('hide');">Close</a></center> 
+		<center><b href="javascript:nbTrajetParMois('hide');">Close</b></center> 
 	</div>
 							<!-- Trajets par an --> 
 	<div class="popupStat" id="trajetAn" name="boutonTrajetParAn"> 
@@ -184,7 +184,7 @@
 		}?>
 		</ul> 
 		<br />
-		<center><a href="javascript:nbTrajetParAnnee('hide');">Close</a></center> 
+		<center><b href="javascript:nbTrajetParAnnee('hide');">Close</b></center> 
 	</div>
 							<!-- top10PersonnesCreatrices --> 
 	<div class="popupStat" id="top10PersonnesCreatrices" name="boutonTrajetParJour"> 
@@ -207,7 +207,7 @@
 		}?>
 		</ul> 
 		<br />
-		<center><a href="javascript:top10PersonnesCreatrices('hide');">Close</a></center> 
+		<center><b href="javascript:top10PersonnesCreatrices('hide');">Close</b></center> 
 	</div>
 
 							<!-- top10PersonnesParticipatrices --> 
@@ -228,7 +228,7 @@
 		}?>
 		</ul> 
 		<br />
-		<center><a href="javascript:top10PersonnesParticipatrices('hide');">Close</a></center> 
+		<center><b href="javascript:top10PersonnesParticipatrices('hide');">Close</b></center> 
 	</div>	
 
 							<!-- Ville De Départ --> 
@@ -249,7 +249,7 @@
 		}?>
 		</ul> 
 		<br />
-		<center><a href="javascript:top10VilleDepart('hide');">Close</a></center> 
+		<center><b href="javascript:top10VilleDepart('hide');">Close</b></center> 
 	</div>	
 	
 							<!-- Ville De Arrivee --> 
@@ -270,7 +270,7 @@
 		}?>
 		</ul> 
 		<br />
-		<center><a href="javascript:top10VilleDestination('hide');">Close</a></center> 
+		<center><b href="javascript:top10VilleDestination('hide');">Close</b></center> 
 	</div>	
 	
 							<!-- Ville D'Arrivee --> 
@@ -288,7 +288,7 @@
 		}?>
 		</ul> 
 		<br />
-		<center><a href="javascript:nombreMoyenPersonneParTrajet('hide');">Close</a></center> 
+		<center><b href="javascript:nombreMoyenPersonneParTrajet('hide');">Close</b></center> 
 	</div>
 	
 	  
