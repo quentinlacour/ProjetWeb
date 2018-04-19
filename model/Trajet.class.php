@@ -60,17 +60,13 @@ class Trajet extends Model {
 		return $result;
 	}
    
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 8f9b8b2ede6c6aa42b0f23795943588df6f94788
 
 
 													/* Fonctions de statistiques */
 
 	public static function nbTrajetParJour(){	
-<<<<<<< HEAD
 	$cleRequete = "nbTrajetParJour";		
 	$trajet = Model::executeRequest($cleRequete);
 	$result = $trajet->fetchAll();
@@ -89,45 +85,7 @@ public static function nbTrajetParAnnee(){
 	return $result;
 }
 
-/*La distance n'a pas été mise dans la base de données puisqu'elle n'est pas réellement utile pour l'utilisateur*/
-public static function distanceParJour(){	
-	$cleRequete = "distanceParJour";		
-	$trajet = Model::executeRequest($cleRequete);
-	// $result = $trajet->fetchAll();
-	return $trajet;
-}
-public static function distanceParMois(){	
-	$cleRequete = "distanceParMois";		
-	$trajet = Model::executeRequest($cleRequete);
-	// $result = $trajet->fetchAll();
-	return $trajet;
-}
-public static function distanceParAnnee(){	
-	$cleRequete = "distanceParAnnee";		
-	$trajet = Model::executeRequest($cleRequete);
-	// $result = $trajet->fetchAll();
-	return $trajet;
-}
 
-=======
-		$cleRequete = "nbTrajetParJour";		
-		$trajet = Model::executeRequest($cleRequete);
-		$result = $trajet->fetchAll();
-		return $result;
-	}
-	public static function nbTrajetParMois(){	
-		$cleRequete = "nbTrajetParMois";		
-		$trajet = Model::executeRequest($cleRequete);
-		$result = $trajet->fetchAll();
-		return $result;
-	}
-	public static function nbTrajetParAnnee(){	
-		$cleRequete = "nbTrajetParAnnee";		
-		$trajet = Model::executeRequest($cleRequete);
-		$result = $trajet->fetchAll();
-		return $result;
-	}
->>>>>>> 8f9b8b2ede6c6aa42b0f23795943588df6f94788
 
 	/*La distance n'a pas été mise dans la base de données puisqu'elle n'est pas réellement utile pour l'utilisateur*/
 	public static function distanceParJour(){	
@@ -186,7 +144,7 @@ public static function distanceParAnnee(){
 		return $result;
 	}
 	
-}
+
 }
 
 ?>
