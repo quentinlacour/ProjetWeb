@@ -28,6 +28,13 @@ class User extends Model {
 		return $user;
 	}
 	
+	/* Créer une voiture */
+	public static function creerVoiture($id_user, $modele, $couleur, $nombre_places){ /* Changer dans la base de donnnées le champ "NULL" pour avoir des champs non obligatoires */
+		$voiture = Model::executeRequest('creerVoiture', array(':id_user' => $id_user, ':modele' => $modele, ':couleur' => $couleur, 
+				':nombre_places' => $nombre_places));
+		return $voiture->fetchAll();
+	}
+	
 	/* Vérifie que le couple login-password est bon */
 	public static function connexion($login, $password){
 		$stmt = Model::executeRequest("PrintPassword", array(':login' => $login));

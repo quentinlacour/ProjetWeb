@@ -1,13 +1,19 @@
 <?php 
+	// $distanceParJour = Trajet::distanceParJour();
+	// $distanceParMois = Trajet::distanceParMois();
+	// $distanceParAnnee = Trajet::distanceParAnnee();
 	$nbTrajetParJour = Trajet::nbTrajetParJour();
 	$nbTrajetParMois = Trajet::nbTrajetParMois();
 	$nbTrajetParAnnee = Trajet::nbTrajetParAnnee();
-	$distanceParJour = Trajet::distanceParJour();
-	$distanceParMois = Trajet::distanceParMois();
-	$distanceParAnnee = Trajet::distanceParAnnee();
+	$top10PersonnesCreatrices = Trajet::top10PersonnesCreatrices();
+	$top10PersonnesParticipatrices = Trajet::top10PersonnesParticipatrices();
+	$top10VilleDepart = Trajet::top10VilleDepart();
+	$top10VilleDestination = Trajet::top10VilleDestination();
+	$nombreMoyenPersonneParTrajet = Trajet::nombreMoyenPersonneParTrajet();
+	$nombreMoyenEtapeParTrajet = Trajet::nombreMoyenEtapeParTrajet();
 	
 	
-	print_r($nbTrajetParJour);
+	// print_r($nbTrajetParJour);
 ?>
 
 <section class="content-section" id="portfolio">	  

@@ -9,7 +9,7 @@
 	TRAJET::addSqlRequest('getIdTrajetByOtherParameters', "SELECT id_trajet FROM trajet WHERE nom_trajet = :nom_trajet AND lieu_depart = :lieu_depart
 	AND lieu_arrivee = :lieu_arrivee AND heure_depart = :heure_depart;");
 	
-	Trajet::addSqlRequest('RecupererVoitures', "SELECT modele FROM voiture WHERE id_user = :id_user;");
+	Trajet::addSqlRequest('RecupererVoitures', "SELECT modele, couleur FROM voiture WHERE id_user = :id_user;");
 	Trajet::addSqlRequest('RecupererIdVoiture', "SELECT id_voiture FROM voiture WHERE modele = :modele;");
 	
 	
@@ -35,12 +35,26 @@
 	Trajet::addSqlRequest('top10VilleDestination', "SELECT prenom_user, nom_user, nombre_trajets_realises FROM utilisateur 
 	ORDER BY nombre_trajets_realises DESC LIMIT 10 ;");
 	
-	Trajet::addSqlRequest('nombreMoyenPersonneParTrajet', "SELECT prenom_user, nom_user, nombre_trajets_realises FROM utilisateur 
-	ORDER BY nombre_trajets_realises DESC LIMIT 10 ;");
-	Trajet::addSqlRequest('nombreMoyenEtapeParTrajet', "SELECT prenom_user, nom_user, nombre_trajets_realises FROM utilisateur 
-	ORDER BY nombre_trajets_realises DESC LIMIT 10 ;");
+	
+	Trajet::addSqlRequest('nombreMoyenPersonneParTrajet', "SELECT prenom_user, nom_user, participe.id_trajet, AVG(nbParticipants) as avgPersonne
+			FROM (
+				SELECT COUNT(participe.id_user) as nbParticipants FROM participe GROUP BY participe.id_trajet
+				) as subRequest, utilisateur
+			JOIN participe ON participe.id_user = utilisateur.id_user
+			GROUP BY participe.id_trajet
+			ORDER BY avgPersonne DESC LIMIT 10 ;");
+			
+	Trajet::addSqlRequest('nombreMoyenEtapeParTrajet', "SELECT nom_trajet, AVG(nbEtapes) as avgEtapes
+			FROM (
+				SELECT COUNT(traverse.identifiant_OP) as nbEtapes FROM traverse GROUP BY traverse.identifiant_OP
+				) as subRequest, trajet
+			JOIN traverse ON traverse.id_trajet = trajet.id_trajet
+			GROUP BY trajet.id_trajet
+			ORDER BY avgEtapes DESC LIMIT 10 ;");
 	
 	
+   
+   
    
 
 
