@@ -74,7 +74,7 @@ class TrajetController extends Controller {
 	
 	public function inscription($request) {
 		$idTrajet = $request->read('idTrajet');
-		print_r($idTrajet);
+		// print_r($idTrajet);
 		
 		$trajet = Trajet::inscrireUtilisateurATrajet($_SESSION['id'], $idTrajet);
 		$view = new TrajetView($this, 'historiqueTrajets');
