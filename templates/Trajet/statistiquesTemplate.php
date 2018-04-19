@@ -168,6 +168,7 @@ Statistiques
 		</ul> 
 		<br />
 		<center><a href="javascript:nbTrajetParJour('hide');">Close</a></center> 
+	</div>
 	
 	
 	
