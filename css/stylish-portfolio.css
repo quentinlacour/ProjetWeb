@@ -19,6 +19,7 @@ body {
 
 .content-section-heading h2 {
   font-size: 3rem;
+  color: #fec503;
 }
 
 .content-section-heading h3 {
@@ -226,6 +227,7 @@ h6 {
   font-weight: 700;
   display: block;
   max-width: 30rem;
+  color: #fff;
 }
 
 .portfolio-item {
