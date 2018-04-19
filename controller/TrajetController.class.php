@@ -74,12 +74,45 @@ class TrajetController extends Controller {
 	
 	public function inscription($request) {
 		$idTrajet = $request->read('idTrajet');
-		print_r($idTrajet);
+		// print_r($idTrajet);
 		
 		$trajet = Trajet::inscrireUtilisateurATrajet($_SESSION['id'], $idTrajet);
 		$view = new TrajetView($this, 'historiqueTrajets');
 		$view->render();
 	}
+	
+	
+	public function top10PersonnesCreatrices($request) {
+		$trajet = Trajet::top10PersonnesCreatrices();
+		$view = new TrajetView($this, 'statistiques');
+		$view->render();
+	}
+	public function top10PersonnesParticipatrices($request) {
+		$trajet = Trajet::top10PersonnesParticipatrices() ;
+		$view = new TrajetView($this, 'statistiques');
+		$view->render();
+	}
+	public function top10VilleDepart($request) {
+		$trajet = Trajet::top10VilleDepart() ;
+		$view = new TrajetView($this, 'statistiques');
+		$view->render();
+	}
+	public function top10VilleDestination($request) {
+		$trajet = Trajet::top10VilleDestination() ;
+		$view = new TrajetView($this, 'statistiques');
+		$view->render();
+	}
+	public function nombreMoyenPersonneParTrajet($request) {
+		$trajet = Trajet::nombreMoyenPersonneParTrajet() ;
+		$view = new TrajetView($this, 'statistiques');
+		$view->render();
+	}
+	public function nombreMoyenEtapeParTrajet($request) {
+		$trajet = Trajet::nombreMoyenEtapeParTrajet() ;
+		$view = new TrajetView($this, 'statistiques');
+		$view->render();
+	}
+	
 }
 
 
