@@ -32,6 +32,7 @@ class UserController extends Controller {
 		
 		$view = new AnonymousView($this, 'index');
 		$view->render();
+		print_r($_SESSION);
 	}
 	
 	
@@ -62,21 +63,7 @@ class UserController extends Controller {
 		$view = new UserView($this, 'monCompte');
 		$view->render();
 	}
-	
-	public function creerVoiture($request) {
-		$id_user = $_SESSION['id'];
-		$modele = $request->read('modele');
-		$couleur = $request->read('couleur');
-		$nombre_places = $request->read('nombre_places');
-		User::creerVoiture($id_user, $modele, $couleur, $nombre_places);
-		
-		$view = new UserView($this, 'monCompte');
-		$view->render();
-	}
    
 }
-
-
-
 
 ?>

@@ -33,7 +33,6 @@
     border: solid #000000 1px;
 }
 </style>
-
 <div id="popupbox"> 
 	<form name="login" action="index.php?a=validateConnection" method="post">
 		<center>Login</center>
@@ -45,6 +44,7 @@
 		<center><input type="submit" name="submit" value="Login" /></center>
 	</form>
 	<center><a href="javascript:login('hide');">Close</a></center> 
+
 </div> 
 
     <!-- Intro Header -->

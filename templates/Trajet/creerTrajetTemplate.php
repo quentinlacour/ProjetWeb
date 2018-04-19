@@ -59,7 +59,7 @@
 					<select name="voiture">
 						<?php for($i=0; $i < sizeof($reponse); $i++){ ?>
 							<option value="<?php echo $reponse[$i][0]?>";>
-							<?php echo $reponse[$i][0] . ' - ' . $reponse[$i][1] ;?> </option>
+							<?php echo $reponse[$i][0]; ?> </option>
 						<?php
 							} 
 						?>

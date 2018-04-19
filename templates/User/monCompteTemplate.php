@@ -5,9 +5,10 @@
 	$email = $_SESSION["email"];
 	$password = $_SESSION["password"];
 	$telephone = $_SESSION["telephone"];
-	$reponse = Trajet::recupererVoitures($_SESSION["id"]);
 ?>
-
+ <link href="css/menuAgency.css" rel="stylesheet">
+<link href="css/agency.css" rel="stylesheet">
+	  
 <section  id="team">
       <div class="container">
         <div class="row">
@@ -85,28 +86,12 @@
                   <div class="timeline-heading">
                     <h4>Statistiques</h4>
 					 <div class="timeline-body">
-						<h5 class="subheading">Mes voitures</h5>
-						<p class="text-muted">
-							<select name="voiture">
-								<?php for($i=0; $i < sizeof($reponse); $i++){ ?>
-									<option value="<?php echo $reponse[$i][0]?>";>
-									<?php echo $reponse[$i][0] . ' - ' . $reponse[$i][1] ;?> </option>
-								<?php
-									} 
-								?>
-							</select>
-						</p>
-						
-						<h5 class="subheading">Créer une voiture</h5>
-						<p class="text-muted"> 
-						<form action="index.php?c=user&a=creerVoiture" method="post">
-						<p class="text-muted">
-							<input class="form-control" id="modele" name="modele" type="text" placeholder="Ton modèle de voiture">
-							<input class="form-control" id="couleur" name="couleur" type="text" placeholder="La couleur de ta voiture">
-							<input class="form-control" id="nombre_places" name="nombre_places" type="number" placeholder="Le nombre de places disponibles">
-						</p>
-						<input type="submit" value="Enregistrer ma voiture" name="boutonCreerVoiture" class="btn btn-default" ></input>
-						</p> 
+						<h5 class="subheading">Nombre de trajets effectués</h5>
+						<p class="text-muted"> <?php echo $login;?> </p> 
+						<h5 class="subheading">Nombre de trajets crées</h5>
+						<p class="text-muted"> <?php echo $nom;?> </p>
+						<h5 class="subheading">Heures passées en voiture</h5>
+						<p class="text-muted"> <?php echo $prenom;?> </p>
 					</div>
                   </div>
                 </div>
