@@ -44,7 +44,7 @@ class View extends MyObject {
 		if(! is_readable($templateFileName))
 			throw new Exception('Undefined template named "' . $name .'"');
 
-		$this->log('Load template: ' . $templateSearchPaths[$i] . $name . 'Template.php');
+		// $this->log('Load template: ' . $templateSearchPaths[$i] . $name . 'Template.php');
 			 
 		$this->loadTemplateFileNamed($templateFileName,$args);
    }
