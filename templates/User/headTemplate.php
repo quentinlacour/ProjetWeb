@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Travel Mines</title>
 
     <!-- Bootstrap core CSS -->
     <link href="BootStrap/Agency/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
