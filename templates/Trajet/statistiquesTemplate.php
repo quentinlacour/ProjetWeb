@@ -77,6 +77,7 @@
 
 <style type="text/css">
 .popupStat{
+<<<<<<< HEAD
   margin: auto;
   margin-top: 200px;
   z-index: 999;
@@ -93,6 +94,25 @@
   display: block;
   visibility: hidden;
 
+=======
+	margin: -70px;
+    margin-left: 40%;
+    padding-top: 11px;
+    rgin-top: 50px;
+    padding-top: 16px;
+    width: 15%;
+    height: 255px;
+    position: absolute;
+    top: 150px;
+    left: 43%;
+    background: #fed136;
+    z-index: 9;
+    font-family: arial;
+    opacity: 0.85;
+    visibility: hidden;
+    color: red;
+    border: solid #000000 1px;
+>>>>>>> 8f9b8b2ede6c6aa42b0f23795943588df6f94788
 }
 </style>
 
