@@ -99,7 +99,7 @@
 
 
 
-<section class="content-section" id="portfolio">	  
+<section class="content-section" id="contact">	  
 <section id="contact">
       <div class="container">
         <div class="row">

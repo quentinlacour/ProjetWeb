@@ -2,10 +2,8 @@
 	$trajets = $this->getArg('trajets');
 	// print_r($trajets[0]);
 ?>
- <link href="css/menuAgency.css" rel="stylesheet">
-    <link href="css/agency.css" rel="stylesheet">
 	  
-<section class="content-section" id="portfolio">
+<section class="content-section" id="contact">
 	<section id="trajets">
 		<div class="container">
 			<div class="row">

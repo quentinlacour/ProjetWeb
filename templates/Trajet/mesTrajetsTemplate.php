@@ -2,7 +2,7 @@
       <div class="container">
         <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">Trajets</h3>
-          <h2 class="mb-5">Gérer mes Trajets</h2>
+          <h2 class="section-heading text-uppercase">Gérer mes Trajets</h2>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6">
