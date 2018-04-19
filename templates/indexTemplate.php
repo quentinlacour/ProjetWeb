@@ -15,7 +15,8 @@
 
 <style type="text/css">
 #popupbox{
-	    margin: -70px;
+  
+	  margin: -70px;
     margin-left: 40%;
     padding-top: 11px;
     margin-top: -540px;

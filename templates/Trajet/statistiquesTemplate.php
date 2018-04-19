@@ -77,8 +77,10 @@
 
 <style type="text/css">
 .popupStat{
+
+  position: absolute;
   margin: auto;
-  margin-top: 200px;
+  margin-top: -200px;
   z-index: 999;
   width: 300px;
   background: #fed136;
