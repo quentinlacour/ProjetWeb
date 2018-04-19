@@ -38,10 +38,6 @@
   -moz-box-shadow: 0 0 5px #999;
   -webkit-box-shadow: 0 0 5px #999;
 }
-
-
-
-
 </style>
  
 
