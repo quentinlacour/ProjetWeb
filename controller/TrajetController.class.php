@@ -82,6 +82,8 @@ class TrajetController extends Controller {
 	}
 	
 	
+	/* Fonction de statistiques */ 
+	
 	public function top10PersonnesCreatrices($request) {
 		$trajet = Trajet::top10PersonnesCreatrices();
 		$view = new TrajetView($this, 'statistiques');
