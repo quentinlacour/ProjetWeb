@@ -37,6 +37,27 @@ Statistiques
 			document.getElementById('trajetMois').style.visibility="hidden"; 
 		}
 	}
+	function nbTrajetParAnnee(showhide){
+		if(showhide == "show"){
+			document.getElementById('trajetAn').style.visibility="visible";
+		}else if(showhide == "hide"){
+			document.getElementById('trajetAn').style.visibility="hidden"; 
+		}
+	}
+	function top10PersonnesCreatrices(showhide){
+		if(showhide == "show"){
+			document.getElementById('top10PersonnesCreatrices').style.visibility="visible";
+		}else if(showhide == "hide"){
+			document.getElementById('top10PersonnesCreatrices').style.visibility="hidden"; 
+		}
+	}
+	function top10PersonnesParticipatrices(showhide){
+		if(showhide == "show"){
+			document.getElementById('top10PersonnesParticipatrices').style.visibility="visible";
+		}else if(showhide == "hide"){
+			document.getElementById('top10PersonnesParticipatrices').style.visibility="hidden"; 
+		}
+	}
 </script>
 
 <style type="text/css">
@@ -75,14 +96,14 @@ Statistiques
 			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="javascript:nbTrajetParJour('show');">Nombre de Trajets par jour</a>
 			<br />
 			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="javascript:nbTrajetParMois('show');">Nombre de Trajets par mois</a>
-			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="javascript:nbTrajetParJour('show');">Nombre de Trajets par an</a>
-			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="javascript:nbTrajetParJour('show');">Top 10 des personnes créant des trajets</a>
+			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="javascript:nbTrajetParAnnee('show');">Nombre de Trajets par an</a>
+			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="javascript:top10PersonnesCreatrices('show');">Top 10 des personnes créant des trajets</a>
 		  </div>
 		  <div class="col-md-6">
 			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="javascript:nbTrajetParJour('show');">Top 10 des villes de départ</a>
 			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="javascript:nbTrajetParJour('show');">Top 10 des villes de destination</a>
 			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="javascript:nbTrajetParJour('show');">Nombre moyen de personnes par trajets</a>
-			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="javascript:nbTrajetParJour('show');">Top 10 des personnes participant à des trajets</a>
+			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="javascript:top10PersonnesParticipatrices('show');">Top 10 des personnes participant à des trajets</a>
           </div>
         </div>
       </div>
@@ -130,8 +151,8 @@ Statistiques
 		<center><a href="javascript:nbTrajetParMois('hide');">Close</a></center> 
 	</div>
 							<!-- Trajets par an --> 
-	<div class="popupStat" id="trajetJour" name="boutonTrajetParAn"> 
-		<center> Nombre trajets  Jour du mois </center>
+	<div class="popupStat" id="trajetAn" name="boutonTrajetParAn"> 
+		<center> Nombre trajets  Annee </center>
 		<?php 
 		$nbTrajets = sizeof($nbTrajetParAnnee);
 		for ($i=0; $i<$nbTrajets; $i++){ ?>
@@ -147,29 +168,49 @@ Statistiques
 		}?>
 		</ul> 
 		<br />
-		<center><a href="javascript:nbTrajetParAn('hide');">Close</a></center> 
+		<center><a href="javascript:nbTrajetParAnnee('hide');">Close</a></center> 
 	</div>
-	
-	<div class="popupStat" id="trajetJour" name="boutonTrajetParJour"> 
-		<center> Nombre trajets  Jour du mois </center>
+							<!-- top10PersonnesCreatrices --> 
+	<div class="popupStat" id="top10PersonnesCreatrices" name="boutonTrajetParJour"> 
+		<center> Prenom   Nom </center>
 		<?php 
-		$nbTrajets = sizeof($nbTrajetParJour);
+		$nbTrajets = sizeof($top10PersonnesCreatrices);
 		for ($i=0; $i<$nbTrajets; $i++){ ?>
 			<ul class="list-inline mb-2" style="text-align: center;">
 				<li class="list-inline-item"> 
-					<p class="text" name="nom_trajet" id="nom_trajet"><?php print_r($nbTrajetParJour[$i][0]);?></p>
+					<p class="text" name="nom_trajet" id="nom_trajet"><?php print_r($top10PersonnesCreatrices[$i][0]);?></p>
 				</li>
 				<li class="list-inline-item"> 
-					<p class="text" name="nom_trajet" id="nom_trajet"><?php print_r($nbTrajetParJour[$i][1]);?></p>
+					<p class="text" name="nom_trajet" id="nom_trajet"><?php print_r($top10PersonnesCreatrices[$i][1]);?></p>
 				</li>
 			</ul> 
 		<?php 
 		}?>
 		</ul> 
 		<br />
-		<center><a href="javascript:nbTrajetParJour('hide');">Close</a></center> 
+		<center><a href="javascript:top10PersonnesCreatrices('hide');">Close</a></center> 
 	</div>
-	
+
+							<!-- top10PersonnesParticipatrices --> 
+	<div class="popupStat" id="top10PersonnesParticipatrices" name="boutonTrajetParJour"> 
+		<center> Prenom   Nom </center>
+		<?php 
+		$nbTrajets = sizeof($top10PersonnesParticipatrices);
+		for ($i=0; $i<$nbTrajets; $i++){ ?>
+			<ul class="list-inline mb-2" style="text-align: center;">
+				<li class="list-inline-item"> 
+					<p class="text" name="nom_trajet" id="nom_trajet"><?php print_r($top10PersonnesParticipatrices[$i][0]);?></p>
+				</li>
+				<li class="list-inline-item"> 
+					<p class="text" name="nom_trajet" id="nom_trajet"><?php print_r($top10PersonnesParticipatrices[$i][1]);?></p>
+				</li>
+			</ul> 
+		<?php 
+		}?>
+		</ul> 
+		<br />
+		<center><a href="javascript:top10PersonnesParticipatrices('hide');">Close</a></center> 
+	</div>	
 	
 	
 	  
