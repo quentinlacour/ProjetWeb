@@ -80,8 +80,6 @@ class TrajetController extends Controller {
 		$view = new TrajetView($this, 'historiqueTrajets');
 		$view->render();
 	}
-<<<<<<< HEAD
-=======
 	
 	
 	/* Fonction de statistiques */ 
@@ -117,7 +115,6 @@ class TrajetController extends Controller {
 		$view->render();
 	}
 	
->>>>>>> 4ebe837e4a8ce29c5535222f82a2250ad0ac7f41
 }
 
 

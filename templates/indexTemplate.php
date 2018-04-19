@@ -42,6 +42,7 @@
 		<center><input name="password" type="password" size="14" /></center>
     <br />
 		<center><input type="submit" name="submit" value="Login" /></center>
+    <br />
 	</form>
 	<center><a href="javascript:login('hide');">Close</a></center> 
 

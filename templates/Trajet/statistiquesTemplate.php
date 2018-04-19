@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-Statistiques
-<link href="css/menuAgency.css" rel="stylesheet">
-    <link href="css/agency.css" rel="stylesheet">
-	  
-=======
 <?php 
 	// $distanceParJour = Trajet::distanceParJour();
 	// $distanceParMois = Trajet::distanceParMois();
@@ -229,4 +223,3 @@ Statistiques
 
 
 
->>>>>>> 4ebe837e4a8ce29c5535222f82a2250ad0ac7f41
