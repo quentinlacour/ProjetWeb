@@ -84,7 +84,7 @@
     padding-top: 16px;
     width: 15%;
     height: 255px;
-    position: sticky;
+    position: absolute;
     top: 150px;
     left: 43%;
     background: #fed136;

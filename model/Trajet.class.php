@@ -60,87 +60,86 @@ class Trajet extends Model {
 		return $result;
 	}
    
-}
-
 
 
 													/* Fonctions de statistiques */
 
-public static function nbTrajetParJour(){	
-	$cleRequete = "nbTrajetParJour";		
-	$trajet = Model::executeRequest($cleRequete);
-	$result = $trajet->fetchAll();
-	return $result;
-}
-public static function nbTrajetParMois(){	
-	$cleRequete = "nbTrajetParMois";		
-	$trajet = Model::executeRequest($cleRequete);
-	$result = $trajet->fetchAll();
-	return $result;
-}
-public static function nbTrajetParAnnee(){	
-	$cleRequete = "nbTrajetParAnnee";		
-	$trajet = Model::executeRequest($cleRequete);
-	$result = $trajet->fetchAll();
-	return $result;
-}
+	public static function nbTrajetParJour(){	
+		$cleRequete = "nbTrajetParJour";		
+		$trajet = Model::executeRequest($cleRequete);
+		$result = $trajet->fetchAll();
+		return $result;
+	}
+	public static function nbTrajetParMois(){	
+		$cleRequete = "nbTrajetParMois";		
+		$trajet = Model::executeRequest($cleRequete);
+		$result = $trajet->fetchAll();
+		return $result;
+	}
+	public static function nbTrajetParAnnee(){	
+		$cleRequete = "nbTrajetParAnnee";		
+		$trajet = Model::executeRequest($cleRequete);
+		$result = $trajet->fetchAll();
+		return $result;
+	}
 
-/*La distance n'a pas été mise dans la base de données puisqu'elle n'est pas réellement utile pour l'utilisateur*/
-public static function distanceParJour(){	
-	$cleRequete = "distanceParJour";		
-	$trajet = Model::executeRequest($cleRequete);
-	// $result = $trajet->fetchAll();
-	return $trajet;
-}
-public static function distanceParMois(){	
-	$cleRequete = "distanceParMois";		
-	$trajet = Model::executeRequest($cleRequete);
-	// $result = $trajet->fetchAll();
-	return $trajet;
-}
-public static function distanceParAnnee(){	
-	$cleRequete = "distanceParAnnee";		
-	$trajet = Model::executeRequest($cleRequete);
-	// $result = $trajet->fetchAll();
-	return $trajet;
-}
-
-
-public static function top10PersonnesCreatrices(){	
-	$cleRequete = "top10PersonnesCreatrices";		
-	$trajet = Model::executeRequest($cleRequete);
-	$result = $trajet->fetchAll();
-	return $result;
-}
-public static function top10PersonnesParticipatrices(){	
-	$cleRequete = "top10PersonnesParticipatrices";		
-	$trajet = Model::executeRequest($cleRequete);
-	$result = $trajet->fetchAll();
-	return $result;
-}
-public static function top10VilleDepart(){	
-	$cleRequete = "top10VilleDepart";		
-	$trajet = Model::executeRequest($cleRequete);
-	$result = $trajet->fetchAll();
-	return $result;
-}
-public static function top10VilleDestination(){	
-	$cleRequete = "top10VilleDestination";		
-	$trajet = Model::executeRequest($cleRequete);
-	$result = $trajet->fetchAll();
-	return $result;
-}
-public static function nombreMoyenPersonneParTrajet(){	
-	$cleRequete = "nombreMoyenPersonneParTrajet";		
-	$trajet = Model::executeRequest($cleRequete);
-	$result = $trajet->fetchAll();
-	return $result;
-}
-public static function nombreMoyenEtapeParTrajet(){	
-	$cleRequete = "nombreMoyenEtapeParTrajet";		
-	$trajet = Model::executeRequest($cleRequete);
-	$result = $trajet->fetchAll();
-	return $result;
+	/*La distance n'a pas été mise dans la base de données puisqu'elle n'est pas réellement utile pour l'utilisateur*/
+	public static function distanceParJour(){	
+		$cleRequete = "distanceParJour";		
+		$trajet = Model::executeRequest($cleRequete);
+		// $result = $trajet->fetchAll();
+		return $trajet;
+	}
+	public static function distanceParMois(){	
+		$cleRequete = "distanceParMois";		
+		$trajet = Model::executeRequest($cleRequete);
+		// $result = $trajet->fetchAll();
+		return $trajet;
+	}
+	public static function distanceParAnnee(){	
+		$cleRequete = "distanceParAnnee";		
+		$trajet = Model::executeRequest($cleRequete);
+		// $result = $trajet->fetchAll();
+		return $trajet;
+	}
+	
+	public static function top10PersonnesCreatrices(){	
+		$cleRequete = "top10PersonnesCreatrices";		
+		$trajet = Model::executeRequest($cleRequete);
+		$result = $trajet->fetchAll();
+		return $result;
+	}
+	public static function top10PersonnesParticipatrices(){	
+		$cleRequete = "top10PersonnesParticipatrices";		
+		$trajet = Model::executeRequest($cleRequete);
+		$result = $trajet->fetchAll();
+		return $result;
+	}
+	public static function top10VilleDepart(){	
+		$cleRequete = "top10VilleDepart";		
+		$trajet = Model::executeRequest($cleRequete);
+		$result = $trajet->fetchAll();
+		return $result;
+	}
+	public static function top10VilleDestination(){	
+		$cleRequete = "top10VilleDestination";		
+		$trajet = Model::executeRequest($cleRequete);
+		$result = $trajet->fetchAll();
+		return $result;
+	}
+	public static function nombreMoyenPersonneParTrajet(){	
+		$cleRequete = "nombreMoyenPersonneParTrajet";		
+		$trajet = Model::executeRequest($cleRequete);
+		$result = $trajet->fetchAll();
+		return $result;
+	}
+	public static function nombreMoyenEtapeParTrajet(){	
+		$cleRequete = "nombreMoyenEtapeParTrajet";		
+		$trajet = Model::executeRequest($cleRequete);
+		$result = $trajet->fetchAll();
+		return $result;
+	}
+	
 }
 
 ?>

@@ -5,6 +5,7 @@
 	$email = $_SESSION["email"];
 	$password = $_SESSION["password"];
 	$telephone = $_SESSION["telephone"];
+	$reponse = Trajet::recupererVoitures($_SESSION["id"]);
 ?>
  <link href="css/menuAgency.css" rel="stylesheet">
 <link href="css/agency.css" rel="stylesheet">
@@ -107,8 +108,7 @@
              <input class="form-control" id="nombre_places" name="nombre_places" type="number" placeholder="Le nombre de places disponibles">
            </p>
            <input type="submit" value="Enregistrer ma voiture" name="boutonCreerVoiture" class="btn btn-default" ></input>
-           </p> 
-						<p class="text-muted"> <?php echo $prenom;?> </p>
+           </p>
 					</div>
                   </div>
                 </div>
