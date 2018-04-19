@@ -17,6 +17,7 @@
 	User::addSqlRequest('ChangePassword', "UPDATE `utilisateur` SET`password`= :password WHERE login = :login");
 	User::addSqlRequest('ChangeTelephone', "UPDATE `utilisateur` SET`telephone`= :telephone WHERE login = :login");
    
-
+	User::addSqlRequest('creerVoiture', "INSERT INTO `voiture`(`id_user`, `modele`, `couleur`, `nombre_places`) 
+	VALUES (:id_user, :modele, :couleur, :nombre_places)");
 
 ?>

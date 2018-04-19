@@ -12,7 +12,7 @@
 	TRAJET::addSqlRequest('getIdTrajetByOtherParameters', "SELECT id_trajet FROM trajet WHERE nom_trajet = :nom_trajet AND lieu_depart = :lieu_depart
 	AND lieu_arrivee = :lieu_arrivee AND heure_depart = :heure_depart;");
 	
-	Trajet::addSqlRequest('RecupererVoitures', "SELECT modele FROM voiture WHERE id_user = :id_user;");
+	Trajet::addSqlRequest('RecupererVoitures', "SELECT modele, couleur FROM voiture WHERE id_user = :id_user;");
 	Trajet::addSqlRequest('RecupererIdVoiture', "SELECT id_voiture FROM voiture WHERE modele = :modele;");
 	
 	
